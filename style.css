@@ -378,3 +378,6 @@ section { padding: 72px 0; }
 @media (min-width: 901px) {
   .card .thumb > img, .card .thumb > div, .card[href="intrakore.html"] .thumb > img { width: 100%; height: 100%; max-width: none; }
 }
+
+/* Nav without brand: centred links */
+.nav .wrap { justify-content: center; }
