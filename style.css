@@ -381,3 +381,8 @@ section { padding: 72px 0; }
 
 /* Nav without brand: centred links */
 .nav .wrap { justify-content: center; }
+
+/* Before / after pair */
+.fig-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0 8px; max-width: 100%; }
+.fig-pair .fig { margin: 0; }
+@media (max-width: 700px) { .fig-pair { grid-template-columns: 1fr; } }
