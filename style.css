@@ -248,3 +248,52 @@ html.has-dot, html.has-dot * { cursor: none !important; }
 .work { column-gap: 32px; row-gap: 48px; }
 .card .cat { margin-top: 4px; }
 .card p:not(.cat) { margin-top: 12px; }
+
+/* ===== Wider portfolio layout (replaces the narrow blog column) ===== */
+:root { --wrap: 1200px; }
+section > .wrap > h2 { font-size: 28px; font-weight: 600; margin-bottom: 28px; }
+section { padding: 72px 0; }
+
+/* Work grid: big two-up cards */
+.work { grid-template-columns: 1fr 1fr; column-gap: 40px; row-gap: 64px; }
+.card .thumb { aspect-ratio: 16 / 11; border-radius: 20px; }
+.card h3 { font-size: 20px; margin-top: 20px; }
+
+/* What I bring: three columns */
+.bring { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.bring .item { grid-template-columns: 1fr; padding: 28px; gap: 12px; border-radius: 20px; }
+
+/* Experience: three columns */
+.xp { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.xp li { flex-direction: column; justify-content: flex-start; padding: 24px; border: 1px solid var(--line); border-radius: 20px; }
+.xp li:last-child { border-bottom: 1px solid var(--line); }
+.xp li:first-child { padding-top: 24px; }
+.xp span { order: -1; margin-bottom: 8px; }
+
+.intro-wrap .intro { font-size: 18px; max-width: 64ch; }
+
+/* Case study pages: label column + wide content */
+.cs-hero { padding: 56px 0 40px; }
+.cs-hero h1 { font-size: 44px; max-width: 22ch; }
+.cs-hero .lede { font-size: 18px; max-width: 64ch; }
+.facts { grid-template-columns: repeat(4, 1fr); column-gap: 24px; }
+.facts div:nth-child(odd) { padding-right: 0; }
+.cs-art, .hero-fig { margin-top: 16px; }
+.chapter { display: grid; grid-template-columns: 220px minmax(0, 1fr); column-gap: 56px; padding: 56px 0; border-top: 1px solid var(--line); }
+.chapter > .label { grid-column: 1; grid-row: 1 / span 30; align-self: start; position: sticky; top: 96px; margin: 6px 0 0; }
+.chapter > :not(.label) { grid-column: 2; }
+.chapter h2, .chapter > p, .chapter > ul, .chapter > ol, .chapter > div > p, .chapter > div > ul, .chapter > div > h2 { max-width: 720px; }
+.chapter h2 { font-size: 28px; }
+.chapter:has(> .stats:only-child) { display: block; border-top: 0; padding-top: 24px; }
+
+@media (max-width: 900px) {
+  .work { grid-template-columns: 1fr; row-gap: 48px; }
+  .bring, .xp { grid-template-columns: 1fr; }
+  .facts { grid-template-columns: 1fr 1fr; }
+  .chapter { grid-template-columns: 1fr; padding: 40px 0; }
+  .chapter > .label { grid-row: auto; position: static; margin-bottom: 8px; }
+  .chapter > :not(.label) { grid-column: 1; }
+  .cs-hero h1 { font-size: 32px; }
+}
+@media (max-width: 640px) { .facts { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .chapter { grid-template-columns: minmax(0, 1fr); } }
