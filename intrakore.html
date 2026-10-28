@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Intrakore Design System · Shaistha Shaik</title>
-<meta name="description" content="Intrakore case study: an enterprise design system for a construction ERP, from Figma tokens to production code across 23 apps, by Shaistha Shaik.">
+<meta name="description" content="Intrakore case study: one design system for a construction ERP, from hand-built Figma ramps to two shipped component libraries and a desk-wide theming app across 23 apps, by Shaistha Shaik.">
 <link rel="stylesheet" href="style.css">
 <script src="theme.js"></script>
 <script src="cursor.js"></script>
@@ -28,13 +28,13 @@
 <main class="wrap">
   <div class="cs-hero">
     <a class="back" href="index.html#work">← All work</a>
-    <h1>Intrakore: an enterprise design system for a construction ERP</h1>
-    <p class="lede">Intrakore is an ERP for fitout and construction companies, built on Frappe V16. I designed and engineered its design system: one source of truth from Figma tokens to production code, across 23 apps.</p>
+    <h1>Intrakore: one design system for a construction ERP</h1>
+    <p class="lede">I designed and engineered one design system for Intrakore, a construction ERP built on Frappe V16. It runs from hand-built Figma colour ramps to two shipped component libraries and a desk-wide theming app that every module inherits.</p>
     <div class="facts">
       <div><span class="label">Role</span><p>Design Engineer, Design Systems</p></div>
       <div><span class="label">Platform</span><p>Frappe V16 ERP, 23 apps</p></div>
-      <div><span class="label">My scope</span><p>Tokens, Figma library, 25 Vue components, theming app, governance, docs</p></div>
-      <div><span class="label">Team scope</span><p>Developers built dashboards and custom pages on the system; I audited against it</p></div>
+      <div><span class="label">My scope</span><p>Foundations, token architecture, Figma library, Vue component library, native JS port, desk theming app, accessibility fixes, governance and docs site. I designed it and shipped the code.</p></div>
+      <div><span class="label">Team scope</span><p>Developers built module dashboards and backends and handled deployment. I set the system they build on, reviewed their pages against it, and rebuilt one dashboard as the reference.</p></div>
     </div>
   </div>
 
@@ -42,123 +42,176 @@
 
   <div class="chapter">
     <div class="stats">
-      <div class="stat"><strong>25</strong><span>Components</span></div>
+      <div class="stat"><strong>25</strong><span>Vue components</span></div>
       <div class="stat"><strong>114</strong><span>Semantic tokens</span></div>
-      <div class="stat"><strong>600+</strong><span>CSS variables</span></div>
       <div class="stat"><strong>23</strong><span>Apps on one system</span></div>
+      <div class="stat"><strong>2</strong><span>Runtimes, one token set (Vue + native JS)</span></div>
     </div>
   </div>
 
   <div class="chapter">
     <span class="label">The challenge</span>
-    <h2>No design system, 23 live apps, and teams drifting apart.</h2>
-    <p>Teams across sales, estimation, procurement, projects, site execution, finance, HR, QC and HSE spend full workdays in dense lists, forms and reports.</p>
+    <h2>Teams needed one product, but got 23 apps that looked like several.</h2>
+    <p>Teams across sales, estimation, procurement, projects, site execution, finance, HR, QC and HSE spend full workdays in Intrakore's dense lists, forms and reports.</p>
     <ul>
-      <li>Styling was scattered across SCSS, Bootstrap variables, Vue components and inline JavaScript.</li>
-      <li>Developers building dashboards in parallel drifted apart, with different fonts, components and dark-mode selectors.</li>
-      <li>The live ERP runs 23 custom apps, so changes couldn't break anything.</li>
+      <li><strong>No system.</strong> Colour and type were spread across Frappe SCSS, Bootstrap Sass variables, Vue components and inline JavaScript.</li>
+      <li><strong>Parallel drift.</strong> Developers built dashboards side by side, each with its own fonts, colour copies and dark-mode selector.</li>
+      <li><strong>A live product.</strong> The ERP runs 23 custom apps on a shared core, so nothing could break while the system went in.</li>
     </ul>
   </div>
 
   <div class="chapter">
-    <span class="label">01 · Token architecture</span>
-    <h2>Developers choose by role, never by hex value.</h2>
-    <div class="flow">
-      <div class="step"><em>01</em><strong>Primitive</strong><span>Raw colour ramps, sizes, radii</span></div>
-      <div class="step"><em>02</em><strong>Semantic</strong><span>114 tokens named by purpose: ink, surface, outline</span></div>
-      <div class="step"><em>03</em><strong>Component</strong><span>Tokens each component consumes</span></div>
-    </div>
+    <span class="label">01 · Audit</span>
+    <h2>Drift versus intentional variation.</h2>
+    <p>Before designing anything, I audited where styling actually lived and which differences were bugs versus decisions.</p>
     <div class="tbl-scroll"><table class="tbl">
-      <tr><th>Palette</th><th>Role</th></tr>
-      <tr><td>Blueprint</td><td>Primary · #000FCC</td></tr>
-      <tr><td>Dusk</td><td>Secondary</td></tr>
-      <tr><td>Clearing</td><td>Tertiary</td></tr>
-      <tr><td>Plaster, Iron</td><td>Neutrals</td></tr>
+      <tr><th>Surface</th><th>What I found</th><th>Call</th></tr>
+      <tr><td>Frappe desk SCSS (50+ files)</td><td>Hardcoded hex, raw gray primitives, Sass variables</td><td>Drift: replaced with semantic tokens</td></tr>
+      <tr><td>Sales Cockpit</td><td>Off-brand fonts (Jost, Nunito), 11 wrong dark-mode selectors</td><td>Drift: re-aliased to global tokens</td></tr>
+      <tr><td>Commercial Space</td><td>Off-brand fonts (Jost, Work Sans, JetBrains Mono)</td><td>Drift: re-aliased to global tokens</td></tr>
+      <tr><td>Estimation Space</td><td>Correct values, but copied, not wired</td><td>Debt: flagged for token aliasing</td></tr>
+      <tr><td>AR Dashboard</td><td>Hardcoded Inter</td><td>Drift: logged</td></tr>
+      <tr><td>Module accent colours</td><td>Per-module themes proposed early</td><td>Intentional, then dropped: one system for all apps</td></tr>
     </table></div>
-    <figure class="fig"><img src="img/ik-docs-colours.jpg" alt="Blueprint and Dusk ramps, light and dark, from the Intrakore UI docs." loading="lazy"><figcaption>Blueprint and Dusk ramps, light and dark, from the Intrakore UI docs.</figcaption></figure>
+    <p><strong>The rule that came out of it:</strong> a difference is allowed only if it carries meaning, such as a status colour. Everything else resolves to a token.</p>
   </div>
 
   <div class="chapter">
-    <span class="label">02 · Dark mode</span>
-    <h2>Built on its own ramp stops, not inverted colours.</h2>
+    <span class="label">02 · Foundations</span>
+    <h2>Hand-built ramps, layered tokens: developers choose by purpose, never by hex.</h2>
+    <p><strong>Palette.</strong> Four families of 11 stops each: Blueprint (primary), Dusk (secondary), Clearing (tertiary) and a brand-tinted neutral. Plaster and Iron are the near-white and near-black.</p>
     <ul>
-      <li>I tested the brand's dark-mode colours (Sky, Mist) and rejected them because they broke the sidebar. Lighter Blueprint and Dusk stops replaced them.</li>
-      <li>One <code>[data-theme="dark"]</code> selector is enforced across every app. I found and fixed 11 wrong selectors in one app alone.</li>
+      <li><strong>Ramp consistency over the literal brand value.</strong> The primary token is #000FCC, not the brand's #000FCE, so each step of the ramp reads evenly.</li>
+      <li><strong>A neutral with brand DNA.</strong> The gray's hue, 240°, splits the difference between Blueprint (236°) and Dusk (247°).</li>
+      <li><strong>Curves, not flat values.</strong> I smoothed saturation gaps in Dusk and Clearing and a lightness jump in the neutral.</li>
+    </ul>
+    <figure class="fig"><img src="img/ik-docs-colours.jpg" alt="Blueprint and Dusk ramps, light and dark, from the Intrakore UI docs." loading="lazy"><figcaption>Blueprint and Dusk ramps, light and dark, from the Intrakore UI docs.</figcaption></figure>
+    <p><strong>Three tiers.</strong> Primitive → Semantic → Component. The semantic layer is named by role: ink for text, surface for backgrounds, outline for borders. That gives 114 semantic tokens.</p>
+    <div class="flow">
+      <div class="step"><em>01</em><strong>Primitive</strong><span>A ramp stop, such as a Blueprint step</span></div>
+      <div class="step"><em>02</em><strong>Semantic</strong><span>The same colour named by role, such as surface-blueprint</span></div>
+      <div class="step"><em>03</em><strong>Component</strong><span>The token a button or toast actually consumes</span></div>
+    </div>
+    <p>A brand change edits primitives only; semantic and component tokens follow automatically.</p>
+    <p><strong>Type.</strong> ITC Avant Garde Gothic Pro for headings of 28px and up, and Avenir for UI text. Regular weight is set to 420 to match Avenir Book.</p>
+  </div>
+
+  <div class="chapter">
+    <span class="label">03 · Dark mode</span>
+    <h2>Tuned with its own ramp, not inverted.</h2>
+    <ul>
+      <li><strong>Rejected the brand's dark colours.</strong> Sky and Mist were tested and dropped because they made the sidebar look wrong. Dark mode uses lighter Blueprint and Dusk stops instead.</li>
+      <li><strong>One selector everywhere.</strong> Every app uses <code>[data-theme="dark"]</code>. I found and fixed 11 wrong selectors in one app alone.</li>
+      <li><strong>Tokens that flip are watched.</strong> A Toast built on <code>surface-blueprint-9</code> flipped to a pale tint in dark mode, so I pinned its background.</li>
     </ul>
     <figure class="fig"><img src="img/ik-figma-alert.jpg" alt="Alert component in light and dark modes, built from the same semantic tokens." loading="lazy"><figcaption>Alert component in light and dark modes, built from the same semantic tokens.</figcaption></figure>
   </div>
 
   <div class="chapter">
-    <span class="label">03 · Desk-wide theming app</span>
-    <h2>A plug-and-play Frappe app, so all 23 apps inherit the system.</h2>
-    <p>It themes the entire desk from source SCSS, with no one-off overrides.</p>
+    <span class="label">04 · Components</span>
+    <h2>Two runtimes from one token set, because Frappe desk pages can't run Vue.</h2>
     <ul>
-      <li><strong>Gray at rest, accent on interaction.</strong> Screens stay calm for full-day data work. Blueprint appears only on hover, active, focus and selected states.</li>
-      <li><strong>Outline form controls</strong> keep fields clear on data-heavy forms.</li>
-      <li><strong>Typography:</strong> ITC Avant Garde Gothic Pro for headings and Avenir for UI text, with weights calibrated to the real fonts.</li>
+      <li><strong>Vue library (intrakore-ui, npm).</strong> 25 components: forms, tables, navigation, charts, calendar, feedback and a dashboard card header. I re-synced 22 of them against the latest upstream frappe-ui, keeping every brand token and swapping out broken upstream token classes.</li>
+      <li><strong>Native JS library (IK_Components).</strong> About 28 components for desk dashboards, including nine ECharts chart types, lazy-loaded only on pages that draw a chart. Each one is documented in COMPONENTS.md and has its own guideline.</li>
     </ul>
+    <p>One rule across every component: <strong>gray at rest, Blueprint on interaction.</strong> Here it is on the outline button:</p>
+    <div class="tbl-scroll"><table class="tbl">
+      <tr><th>State</th><th>Treatment</th></tr>
+      <tr><td>Rest</td><td>outline-gray-4 border, white surface</td></tr>
+      <tr><td>Hover</td><td>outline-blueprint-3 border, no fill</td></tr>
+      <tr><td>Press</td><td>outline-blueprint-4 border, 1px outline-blueprint-1 ring, no fill</td></tr>
+      <tr><td>Focus (keyboard)</td><td>2px Blueprint ring</td></tr>
+      <tr><td>Focus (after click)</td><td>1px Blueprint ring, never the default grey</td></tr>
+    </table></div>
     <figure class="fig"><img src="img/ik-cost-packages.jpg" alt="Gray at rest, accent on interaction: only the hovered row picks up Blueprint." loading="lazy"><figcaption>Gray at rest, accent on interaction: only the hovered row picks up Blueprint.</figcaption></figure>
+    <p><strong>Status has meaning, not decoration.</strong> KPI cards use a fixed tone ladder: red for overdue, amber for due soon, Blueprint for upcoming, green for all clear.</p>
+    <figure class="fig"><img src="img/ik-figma-sidebar.jpg" alt="Sidebar components in the Figma library, with documented states and token mapping." loading="lazy"><figcaption>Sidebar components in the Figma library, with documented states and token mapping.</figcaption></figure>
   </div>
 
   <div class="chapter">
-    <span class="label">04 · Governance</span>
-    <h2>Shared rules matter as much as components.</h2>
+    <span class="label">05 · Accessibility</span>
+    <h2>Contrast and focus: where an ERP people use all day fails first.</h2>
     <ul>
-      <li>Audited the team's dashboards and aligned them to the shared tokens.</li>
-      <li>Defined UI guidelines for shared patterns: search, dropdowns, date pickers, uploads and dashboard card headers.</li>
-      <li>Doctype reviews use three-way triage: a global token bug (I fix it), a field configuration issue (escalated), or a custom doctype with no token coverage (flagged first).</li>
+      <li><strong>Contrast-checked ramps.</strong> I tested ramp stops against WCAG AA on white. Blueprint 500 (#5763FA) fails for text, so text and controls use darker stops.</li>
+      <li><strong>Keyboard focus that shows, mouse focus that doesn't nag.</strong> Frappe's Bootstrap styles plain <code>:focus</code>, so every clicked button kept a grey ring. I split it: a 2px Blueprint ring on keyboard focus (<code>:focus-visible</code>) and a 1px ring after a click.</li>
+      <li><strong>Focus visible in dark mode.</strong> The focus token resolved to #000B99, a navy that disappears on a near-black background. I moved dark-mode rings to outline-blueprint-4 across buttons, fields and the shared <code>--focus-default</code>.</li>
+      <li><strong>Kept what upstream removed.</strong> When an upstream frappe-ui update deleted a component's focus ring, I restored it instead of matching upstream.</li>
     </ul>
+    <p><strong>Not yet covered:</strong> reduced motion, a screen-reader pass and right-to-left (Arabic) layout. The library uses fixed left/right spacing today, so RTL is a real next step.</p>
   </div>
 
   <div class="chapter">
-    <span class="label">The bug that proved the system</span>
-    <h2>One root-cause fix restored fonts and dark mode product-wide.</h2>
+    <span class="label">06 · Theming app</span>
+    <h2>One plug-and-play Frappe app themes the whole desk.</h2>
+    <p>I packaged the system as a Frappe app (<code>intrakore_ui</code>) that themes the desk from source SCSS, so all 23 apps inherit it with no per-app overrides.</p>
+    <p>Along the way I worked inside real engineering limits. Bootstrap Sass variables can't take CSS variables because Bootstrap edits them at compile time. Colours set by JavaScript at runtime can only be fixed in the script. And the build order decides which stylesheet wins.</p>
+    <p><strong>The bug that proved the system</strong></p>
     <div class="challenges">
       <div class="challenge"><b>Symptom</b><p>Brand fonts and dark mode were missing across the whole desk.</p></div>
-      <div class="challenge"><b>Investigation</b><p>I checked live token values in the browser console. They didn't resolve at all.</p></div>
-      <div class="challenge"><b>Cause</b><p>The stylesheet hook in <code>hooks.py</code> was commented out, so colour and type tokens were never compiled or loaded.</p></div>
-      <div class="challenge"><b>Fix</b><p>Created a proper SCSS bundle, enabled the hook, added <code>@font-face</code> declarations and filled the missing dark-mode text tokens.</p></div>
+      <div class="challenge"><b>Investigation</b><p>I read the live token values in the browser console. They didn't resolve at all.</p></div>
+      <div class="challenge"><b>Cause</b><p>The stylesheet hook in <code>hooks.py</code> was commented out, so the colour and type tokens were never compiled or loaded.</p></div>
+      <div class="challenge"><b>Fix</b><p>I created a proper SCSS bundle, enabled the hook, added <code>@font-face</code> declarations and filled in the missing dark-mode text tokens.</p></div>
+      <div class="challenge"><b>Result</b><p>One root-cause fix restored fonts and dark mode product-wide.</p></div>
     </div>
   </div>
 
   <div class="chapter">
-    <span class="label">Also shipped</span>
-    <h2>Figma library, component package and docs.</h2>
+    <span class="label">07 · Governance</span>
+    <h2>The system only counts if teams build on it.</h2>
+    <p>I set rules, measured where they held and rebuilt one page as proof.</p>
+    <div class="tbl-scroll"><table class="tbl">
+      <tr><th>Adoption, measured</th><th>Result</th></tr>
+      <tr><td>Apps inheriting the desk theme</td><td>23 of 23</td></tr>
+      <tr><td>Desk SCSS files moved to semantic tokens</td><td>50+</td></tr>
+      <tr><td>Dashboards re-aliased to global font tokens</td><td>2 (Sales Cockpit, Commercial Space)</td></tr>
+      <tr><td>Reference dashboard rebuilt on shared components</td><td>Payables Overview: tokens only, no hex values</td></tr>
+    </table></div>
     <ul>
-      <li><strong>Figma library:</strong> one master library publishing to the product files, with light and dark variable modes.</li>
-      <li><strong>Component library:</strong> 25 Vue components (forms, tables, navigation, charts, calendar, feedback, dashboard card header), shipped as an npm package the team installs.</li>
-      <li><strong>Documentation site:</strong> an interactive playground for every component, with live preview, option controls and a code snippet.</li>
+      <li><strong>Rules.</strong> I wrote guidelines for the shared dashboard patterns (header, cards, avatar and badge, search, dropdowns, date pickers and uploads), plus a COMPONENTS.md reference in the repo.</li>
+      <li><strong>Triage.</strong> Every page review sorts issues three ways: a global token bug, which I fix; a field configuration issue, which goes to the PM; and a custom doctype with no token coverage, which is flagged before anyone fixes it.</li>
     </ul>
-    <figure class="fig"><img src="img/ik-figma-sidebar.jpg" alt="Sidebar components in the Figma library, with documented states and token mapping." loading="lazy"><figcaption>Sidebar components in the Figma library, with documented states and token mapping.</figcaption></figure>
+  </div>
+
+  <div class="chapter">
+    <span class="label">08 · Figma, code and docs</span>
+    <h2>One set of tokens, three places.</h2>
+    <p>One Figma master library, with light and dark variable modes, publishes to the product files. The same tokens drive the Tailwind preset in the Vue library and the CSS variables in the desk app.</p>
+    <p>The docs site, built in VitePress, gives every component an interactive playground with a live preview, option controls and a copyable snippet. Demos use construction-themed copy so they read like the product. It goes to the team through a reviewed pull request.</p>
     <figure class="fig"><img src="img/ik-docs-home.jpg" alt="Intrakore UI, the documentation site for tokens, components and guidelines." loading="lazy"><figcaption>Intrakore UI, the documentation site for tokens, components and guidelines.</figcaption></figure>
   </div>
 
   <div class="chapter">
-    <span class="label">Shipping code with Claude</span>
-    <h2>I didn't hand off specs. I shipped the system.</h2>
+    <span class="label">09 · Shipping with Claude</span>
+    <h2>I'm a designer who ships production code, with Claude as my engineering partner.</h2>
     <ul>
-      <li><strong>What I built:</strong> the component library, the SCSS theming app, token fixes in production repos and the docs site.</li>
-      <li><strong>How:</strong> Claude helped me read unfamiliar framework source, trace build and compile issues, and write and refactor components. I verified every change live and pushed it through the team's Git workflow.</li>
-      <li><strong>What stayed mine:</strong> the token architecture, every design decision, scope calls, and the review of every change.</li>
+      <li><strong>What I built:</strong> both component libraries, the desk theming app, token fixes in production repos, the accessibility fixes and the docs site.</li>
+      <li><strong>How:</strong> Claude helped me read unfamiliar framework source, trace build and compile issues, and write and refactor components. I verified every change live in the browser console and shipped it through tickets, branches, PRs and CI.</li>
+      <li><strong>What stayed mine:</strong> the ramps, the token architecture, every design decision, scope calls and the review of every change.</li>
+      <li><strong>Why it matters:</strong> there was no handoff gap. I didn't pass specs to developers; I shipped the system.</li>
     </ul>
     <figure class="fig"><img src="img/ik-claude-terminal.jpg" alt="Auditing component SCSS in the terminal, next to Figma variables and Claude." loading="lazy"><figcaption>Auditing component SCSS in the terminal, next to Figma variables and Claude.</figcaption></figure>
-  </div>
-
-  <div class="chapter">
-    <span class="label">In progress · RTL</span>
-    <h2>Right-to-left support for Arabic.</h2>
-    <p>I'm extending the system to support right-to-left layouts, so Arabic-speaking teams get the same consistent experience across all 23 apps.</p>
   </div>
 
   <div class="chapter">
     <span class="label">Outcomes</span>
     <h2>One system, 23 apps, light and dark.</h2>
     <ul>
-      <li>25 components and 114 semantic tokens used by the dev team.</li>
-      <li>Dashboards aligned to shared tokens and UI guidelines.</li>
+      <li>One system powers 23 apps, in light and dark mode.</li>
+      <li>25 Vue components and about 28 native JS components run on the same 114 semantic tokens.</li>
+      <li>50+ desk SCSS files moved from hardcoded values to tokens.</li>
       <li>One root-cause fix restored brand fonts and dark mode product-wide.</li>
+      <li>Keyboard focus is visible in both modes.</li>
     </ul>
-    <p><strong>What I learned:</strong> a design system has to survive real engineering constraints. Some colours are set in JavaScript at runtime, some Sass variables are fixed at compile time, and build order matters. Without shared rules, teams drift.</p>
+  </div>
+
+  <div class="chapter">
+    <span class="label">What I'd do differently</span>
+    <h2>Three things I'd change next time.</h2>
+    <ul>
+      <li><strong>Design dark-mode focus on day one.</strong> I shipped focus rings that turned into a near-invisible navy on dark backgrounds and had to fix them later. Now I test every interactive token on both backgrounds before it ships.</li>
+      <li><strong>Set shared patterns before dashboards are built.</strong> I wrote the guidelines after several dashboards had already drifted, which turned prevention into cleanup.</li>
+      <li><strong>Match the text scale to the ramp.</strong> Nine ink tokens on eight gray stops forced one duplicate step. I'd plan the token count and the ramp together.</li>
+    </ul>
   </div>
 
   <div class="next">
