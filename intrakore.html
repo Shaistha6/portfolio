@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intrakore Design System · Shaistha Shaik</title>
+<meta name="description" content="Intrakore case study: an enterprise design system for a construction ERP, from Figma tokens to production code across 23 apps, by Shaistha Shaik.">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js"></script>
+<script src="cursor.js"></script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Shaistha Shaik</a>
+    <ul>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="Shaistha_Shaik_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      <li class="hide-sm"><a href="index.html#about">About</a></li>
+      <li><a href="mailto:shaistha6@gmail.com">Contact</a></li>
+      <li><button class="toggle" aria-label="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="cs-hero">
+    <a class="back" href="index.html#work">← All work</a>
+    <h1>Intrakore: an enterprise design system for a construction ERP</h1>
+    <p class="lede">Intrakore is an ERP for fitout and construction companies, built on Frappe V16. I designed and engineered its design system: one source of truth from Figma tokens to production code, across 23 apps.</p>
+    <div class="facts">
+      <div><span class="label">Role</span><p>Design Engineer, Design Systems</p></div>
+      <div><span class="label">Platform</span><p>Frappe V16 ERP, 23 apps</p></div>
+      <div><span class="label">My scope</span><p>Tokens, Figma library, 25 Vue components, theming app, governance, docs</p></div>
+      <div><span class="label">Team scope</span><p>Developers built dashboards and custom pages on the system; I audited against it</p></div>
+    </div>
+  </div>
+
+  <figure class="fig hero-fig"><img src="img/intrakore.png" alt="Intrakore Bid list in light and dark mode"></figure>
+
+  <div class="chapter">
+    <div class="stats">
+      <div class="stat"><strong>25</strong><span>Components</span></div>
+      <div class="stat"><strong>114</strong><span>Semantic tokens</span></div>
+      <div class="stat"><strong>600+</strong><span>CSS variables</span></div>
+      <div class="stat"><strong>23</strong><span>Apps on one system</span></div>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <span class="label">The challenge</span>
+    <h2>No design system, 23 live apps, and teams drifting apart.</h2>
+    <p>Teams across sales, estimation, procurement, projects, site execution, finance, HR, QC and HSE spend full workdays in dense lists, forms and reports.</p>
+    <ul>
+      <li>Styling was scattered across SCSS, Bootstrap variables, Vue components and inline JavaScript.</li>
+      <li>Developers building dashboards in parallel drifted apart, with different fonts, components and dark-mode selectors.</li>
+      <li>The live ERP runs 23 custom apps, so changes couldn't break anything.</li>
+    </ul>
+  </div>
+
+  <div class="chapter">
+    <span class="label">01 · Token architecture</span>
+    <h2>Developers choose by role, never by hex value.</h2>
+    <div class="flow">
+      <div class="step"><em>01</em><strong>Primitive</strong><span>Raw colour ramps, sizes, radii</span></div>
+      <div class="step"><em>02</em><strong>Semantic</strong><span>114 tokens named by purpose: ink, surface, outline</span></div>
+      <div class="step"><em>03</em><strong>Component</strong><span>Tokens each component consumes</span></div>
+    </div>
+    <div class="tbl-scroll"><table class="tbl">
+      <tr><th>Palette</th><th>Role</th></tr>
+      <tr><td>Blueprint</td><td>Primary · #000FCC</td></tr>
+      <tr><td>Dusk</td><td>Secondary</td></tr>
+      <tr><td>Clearing</td><td>Tertiary</td></tr>
+      <tr><td>Plaster, Iron</td><td>Neutrals</td></tr>
+    </table></div>
+    <figure class="fig"><img src="img/ik-docs-colours.jpg" alt="Blueprint and Dusk ramps, light and dark, from the Intrakore UI docs." loading="lazy"><figcaption>Blueprint and Dusk ramps, light and dark, from the Intrakore UI docs.</figcaption></figure>
+  </div>
+
+  <div class="chapter">
+    <span class="label">02 · Dark mode</span>
+    <h2>Built on its own ramp stops, not inverted colours.</h2>
+    <ul>
+      <li>I tested the brand's dark-mode colours (Sky, Mist) and rejected them because they broke the sidebar. Lighter Blueprint and Dusk stops replaced them.</li>
+      <li>One <code>[data-theme="dark"]</code> selector is enforced across every app. I found and fixed 11 wrong selectors in one app alone.</li>
+    </ul>
+    <figure class="fig"><img src="img/ik-figma-alert.jpg" alt="Alert component in light and dark modes, built from the same semantic tokens." loading="lazy"><figcaption>Alert component in light and dark modes, built from the same semantic tokens.</figcaption></figure>
+  </div>
+
+  <div class="chapter">
+    <span class="label">03 · Desk-wide theming app</span>
+    <h2>A plug-and-play Frappe app, so all 23 apps inherit the system.</h2>
+    <p>It themes the entire desk from source SCSS, with no one-off overrides.</p>
+    <ul>
+      <li><strong>Gray at rest, accent on interaction.</strong> Screens stay calm for full-day data work. Blueprint appears only on hover, active, focus and selected states.</li>
+      <li><strong>Outline form controls</strong> keep fields clear on data-heavy forms.</li>
+      <li><strong>Typography:</strong> ITC Avant Garde Gothic Pro for headings and Avenir for UI text, with weights calibrated to the real fonts.</li>
+    </ul>
+    <figure class="fig"><img src="img/ik-cost-packages.jpg" alt="Gray at rest, accent on interaction: only the hovered row picks up Blueprint." loading="lazy"><figcaption>Gray at rest, accent on interaction: only the hovered row picks up Blueprint.</figcaption></figure>
+  </div>
+
+  <div class="chapter">
+    <span class="label">04 · Governance</span>
+    <h2>Shared rules matter as much as components.</h2>
+    <ul>
+      <li>Audited the team's dashboards and aligned them to the shared tokens.</li>
+      <li>Defined UI guidelines for shared patterns: search, dropdowns, date pickers, uploads and dashboard card headers.</li>
+      <li>Doctype reviews use three-way triage: a global token bug (I fix it), a field configuration issue (escalated), or a custom doctype with no token coverage (flagged first).</li>
+    </ul>
+  </div>
+
+  <div class="chapter">
+    <span class="label">The bug that proved the system</span>
+    <h2>One root-cause fix restored fonts and dark mode product-wide.</h2>
+    <div class="challenges">
+      <div class="challenge"><b>Symptom</b><p>Brand fonts and dark mode were missing across the whole desk.</p></div>
+      <div class="challenge"><b>Investigation</b><p>I checked live token values in the browser console. They didn't resolve at all.</p></div>
+      <div class="challenge"><b>Cause</b><p>The stylesheet hook in <code>hooks.py</code> was commented out, so colour and type tokens were never compiled or loaded.</p></div>
+      <div class="challenge"><b>Fix</b><p>Created a proper SCSS bundle, enabled the hook, added <code>@font-face</code> declarations and filled the missing dark-mode text tokens.</p></div>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <span class="label">Also shipped</span>
+    <h2>Figma library, component package and docs.</h2>
+    <ul>
+      <li><strong>Figma library:</strong> one master library publishing to the product files, with light and dark variable modes.</li>
+      <li><strong>Component library:</strong> 25 Vue components (forms, tables, navigation, charts, calendar, feedback, dashboard card header), shipped as an npm package the team installs.</li>
+      <li><strong>Documentation site:</strong> an interactive playground for every component, with live preview, option controls and a code snippet.</li>
+    </ul>
+    <figure class="fig"><img src="img/ik-figma-sidebar.jpg" alt="Sidebar components in the Figma library, with documented states and token mapping." loading="lazy"><figcaption>Sidebar components in the Figma library, with documented states and token mapping.</figcaption></figure>
+    <figure class="fig"><img src="img/ik-docs-home.jpg" alt="Intrakore UI, the documentation site for tokens, components and guidelines." loading="lazy"><figcaption>Intrakore UI, the documentation site for tokens, components and guidelines.</figcaption></figure>
+  </div>
+
+  <div class="chapter">
+    <span class="label">Shipping code with Claude</span>
+    <h2>I didn't hand off specs. I shipped the system.</h2>
+    <ul>
+      <li><strong>What I built:</strong> the component library, the SCSS theming app, token fixes in production repos and the docs site.</li>
+      <li><strong>How:</strong> Claude helped me read unfamiliar framework source, trace build and compile issues, and write and refactor components. I verified every change live and pushed it through the team's Git workflow.</li>
+      <li><strong>What stayed mine:</strong> the token architecture, every design decision, scope calls, and the review of every change.</li>
+    </ul>
+    <figure class="fig"><img src="img/ik-claude-terminal.jpg" alt="Auditing component SCSS in the terminal, next to Figma variables and Claude." loading="lazy"><figcaption>Auditing component SCSS in the terminal, next to Figma variables and Claude.</figcaption></figure>
+  </div>
+
+  <div class="chapter">
+    <span class="label">In progress · RTL</span>
+    <h2>Right-to-left support for Arabic.</h2>
+    <p>I'm extending the system to support right-to-left layouts, so Arabic-speaking teams get the same consistent experience across all 23 apps.</p>
+  </div>
+
+  <div class="chapter">
+    <span class="label">Outcomes</span>
+    <h2>One system, 23 apps, light and dark.</h2>
+    <ul>
+      <li>25 components and 114 semantic tokens used by the dev team.</li>
+      <li>Dashboards aligned to shared tokens and UI guidelines.</li>
+      <li>One root-cause fix restored brand fonts and dark mode product-wide.</li>
+    </ul>
+    <p><strong>What I learned:</strong> a design system has to survive real engineering constraints. Some colours are set in JavaScript at runtime, some Sass variables are fixed at compile time, and build order matters. Without shared rules, teams drift.</p>
+  </div>
+
+  <div class="next">
+    <a class="back" href="index.html#work">← All work</a>
+    <div><p class="label">Next case study</p><a class="big" href="tasheel-post.html">Tasheel Post →</a></div>
+  </div>
+</main>
+<footer>
+  <div class="wrap row">
+    <div>Designed and built with Claude Code in Abu Dhabi, UAE<br>© 2026 Shaistha Shaik</div>
+    <div class="links"><a href="mailto:shaistha6@gmail.com">Email</a><a href="https://www.linkedin.com/in/shaistha-shaik" target="_blank" rel="noopener">LinkedIn</a><a href="Shaistha_Shaik_Resume.pdf" target="_blank" rel="noopener">Resume</a></div>
+  </div>
+</footer>
+</body>
+</html>

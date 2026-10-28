@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Designsmith Employee App · Shaistha Shaik</title>
+<meta name="description" content="Designsmith Employee App case study: one mobile app for HR, sales and site projects, designed by Shaistha Shaik.">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js"></script>
+<script src="cursor.js"></script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Shaistha Shaik</a>
+    <ul>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="Shaistha_Shaik_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      <li class="hide-sm"><a href="index.html#about">About</a></li>
+      <li><a href="mailto:shaistha6@gmail.com">Contact</a></li>
+      <li><button class="toggle" aria-label="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="cs-hero">
+    <a class="back" href="index.html#work">← All work</a>
+    <h1>Designsmith: one app for HR, sales and site work</h1>
+    <p class="lede">Employees at an interior design and fit-out company used separate tools to check in, apply for leave, log sales and report site progress. I designed one mobile app to replace them.</p>
+    <div class="facts">
+      <div><span class="label">Role</span><p>Lead UX/UI designer: research, IA, flows, system, UI, handoff</p></div>
+      <div><span class="label">Platforms</span><p>iOS and Android</p></div>
+      <div><span class="label">Scope</span><p>50+ screens, 3 modules</p></div>
+      <div><span class="label">Tools</span><p>Figma</p></div>
+    </div>
+  </div>
+
+  <div class="cs-art art-modules" aria-hidden="true">
+    <div>HRMS<small>Attendance · Leave · Letters</small></div>
+    <div>CRM<small>Leads · Events · Sales</small></div>
+    <div>Projects<small>DPR · WPR · Snags</small></div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">The problem</p>
+    <div>
+      <h2>Scattered tools, slow approvals, nothing built for a phone.</h2>
+      <p>Data was spread across systems, approvals waited on desktops, and site staff couldn't report progress on the move.</p>
+      <div class="callout">Fit dense enterprise data (forms, lists, charts, approval states) onto a small screen, for people working between site visits and client meetings.</div>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Users</p>
+    <div>
+      <h2>Four groups, one goal: every daily task in a few taps.</h2>
+      <div class="tbl-scroll"><table class="tbl">
+        <tr><th>User</th><th>Main need</th></tr>
+        <tr><td>All employees</td><td>Check in and out, see leave balance, apply for leave, get letters</td></tr>
+        <tr><td>Sales team</td><td>Log leads, enquiries, events and daily sales activity</td></tr>
+        <tr><td>Site / project team</td><td>Submit daily and weekly progress reports, raise and close snags</td></tr>
+        <tr><td>Managers</td><td>Approve leave and expenses quickly, track progress</td></tr>
+      </table></div>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Information architecture</p>
+    <div>
+      <h2>Three modules on one shared foundation, so it never feels like three apps.</h2>
+      <div class="ia">
+        <div class="root">Designsmith Employee App</div>
+        <div class="mods">
+          <div class="mod"><strong>HRMS</strong><ul><li>Check in → live timer → check out</li><li>Apply for leave → track approval</li><li>Letters and documents</li></ul></div>
+          <div class="mod"><strong>CRM</strong><ul><li>Today's sales activity</li><li>Add or update leads and enquiries</li><li>Log DSA activity and events</li></ul></div>
+          <div class="mod"><strong>Projects</strong><ul><li>Project tasks and progress</li><li>Daily and weekly progress reports</li><li>Raise → assign → resolve snags</li></ul></div>
+        </div>
+        <div class="base">Shared: login · home dashboard · approvals · design system</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Design system</p>
+    <div>
+      <h2>I built the system first, so 50+ screens stayed consistent with one designer.</h2>
+      <ul>
+        <li><strong>Foundations:</strong> colour, type scale, spacing and a mobile grid.</li>
+        <li><strong>Components:</strong> inputs, multi-step forms, cards, lists, status badges, alerts, timers, approval cards, simple charts.</li>
+        <li><strong>States:</strong> empty, loading, error, pending, approved, rejected.</li>
+        <li><strong>Patterns:</strong> one card pattern for leave, expense and report approvals; one list pattern for leads, tasks and snags.</li>
+      </ul>
+      <p>Result: less design debt and a cleaner handoff to engineering.</p>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Decisions</p>
+    <div>
+      <h2>Key design decisions</h2>
+      <div class="tbl-scroll"><table class="tbl">
+        <tr><th>Decision</th><th>Why</th></tr>
+        <tr><td>Three modules under one bottom navigation</td><td>Switch context without switching apps</td></tr>
+        <tr><td>Today's actions first on the home dashboard</td><td>Check-in and approvals are the most frequent tasks</td></tr>
+        <tr><td>Status as colour + label badges</td><td>Readable at a glance, not colour alone</td></tr>
+        <tr><td>Long forms split into short steps</td><td>Progress reports and leave requests are easier on a phone</td></tr>
+        <tr><td>Charts kept to simple bars and totals</td><td>Dense dashboards don't read on small screens</td></tr>
+      </table></div>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Outcome</p>
+    <div>
+      <h2>One app replaced several tools.</h2>
+      <ul>
+        <li>HR, sales and project work in one login.</li>
+        <li>Leave and expense approvals moved to a few taps on mobile.</li>
+        <li>A reusable system made new screens faster to design and build.</li>
+      </ul>
+      <p>I handed off annotated Figma screens, component specs and interaction states to engineering.</p>
+      <p><strong>What I learned:</strong> building the system before the screens was the right call. Next time I'd test with site staff earlier, since progress reports and snags are logged outdoors, often one-handed.</p>
+    </div>
+  </div>
+
+  <div class="next">
+    <a class="back" href="index.html#work">← All work</a>
+    <div><p class="label">Next case study</p><a class="big" href="face-recognition.html">Face Recognition Attendance →</a></div>
+  </div>
+</main>
+<footer>
+  <div class="wrap row">
+    <div>Designed and built with Claude Code in Abu Dhabi, UAE<br>© 2026 Shaistha Shaik</div>
+    <div class="links"><a href="mailto:shaistha6@gmail.com">Email</a><a href="https://www.linkedin.com/in/shaistha-shaik" target="_blank" rel="noopener">LinkedIn</a><a href="Shaistha_Shaik_Resume.pdf" target="_blank" rel="noopener">Resume</a></div>
+  </div>
+</footer>
+</body>
+</html>
