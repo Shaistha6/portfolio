@@ -205,12 +205,13 @@
   </div>
 
   <div class="chapter">
-    <span class="label">What I'd do differently</span>
-    <h2>Three things I'd change next time.</h2>
+    <span class="label">What I'll do next time</span>
+    <h2>Four things I'd change.</h2>
     <ul>
-      <li><strong>Design dark-mode focus on day one.</strong> I shipped focus rings that turned into a near-invisible navy on dark backgrounds and had to fix them later. Now I test every interactive token on both backgrounds before it ships.</li>
-      <li><strong>Set shared patterns before dashboards are built.</strong> I wrote the guidelines after several dashboards had already drifted, which turned prevention into cleanup.</li>
-      <li><strong>Match the text scale to the ramp.</strong> Nine ink tokens on eight gray stops forced one duplicate step. I'd plan the token count and the ramp together.</li>
+      <li><strong>Test every interactive token on both backgrounds first.</strong> The dark-mode focus rings taught me that a token can pass in light mode and vanish in dark. Now each one is checked in both modes before it ships.</li>
+      <li><strong>Publish shared patterns before the first dashboard.</strong> Guidelines written early prevent drift; guidelines written late only clean it up.</li>
+      <li><strong>Plan the token scale and the ramp together.</strong> Fixing the number of text steps before building the ramp avoids duplicate steps.</li>
+      <li><strong>Build for right-to-left from the start.</strong> Logical spacing properties cost nothing on day one and a full pass later, which matters for an Arabic-speaking market.</li>
     </ul>
   </div>
 
