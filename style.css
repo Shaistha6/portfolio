@@ -366,3 +366,9 @@ section { padding: 72px 0; }
 }
 .card[href="intrakore.html"] .thumb > img { transform-origin: 50% 50%; object-position: 50% 50%; transform: scale(1); }
 .card[href="intrakore.html"]:hover .thumb > img { transform: scale(1.1); }
+
+/* Intrakore: same box as the other cards */
+.card[href="intrakore.html"] .thumb { padding: 32px; }
+.card[href="intrakore.html"] .thumb > img { object-fit: contain; border-radius: 12px; transform: scale(1); }
+.card[href="intrakore.html"]:hover .thumb > img { transform: scale(1.1); }
+@media (min-width: 901px) { .card[href="intrakore.html"] .thumb > img { width: 447px; height: 440px; max-width: 100%; } }
