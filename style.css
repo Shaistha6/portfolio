@@ -446,3 +446,9 @@ details.mod .fig { margin: 0 0 20px; }
 .phones { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; align-items: start; background: #f4f2f3; border-radius: 20px; padding: 24px; margin: 0 0 20px; }
 .phones img { width: 100%; height: auto; display: block; border-radius: 14px; }
 @media (max-width: 700px) { .phones { grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 14px; } }
+
+/* Face recognition mobile screens */
+.fr-phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; background: #f4f2f3; border-radius: 20px; padding: 24px; margin: 20px 0 10px; }
+.fr-phones figure { margin: 0; }
+.fr-phones img { width: 100%; height: auto; display: block; border-radius: 14px; }
+@media (max-width: 700px) { .fr-phones { gap: 8px; padding: 12px; } }
