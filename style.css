@@ -430,3 +430,14 @@ section { padding: 72px 0; }
 .vids .fig { margin: 0; }
 .vids video { width: 100%; display: block; border-radius: 12px; background: #000; }
 @media (max-width: 700px) { .vids { grid-template-columns: 1fr; } }
+
+/* Designsmith module screens */
+details.mod { border-top: 1px solid var(--line, rgba(128,128,128,.25)); padding: 4px 0; }
+details.mod:last-of-type { border-bottom: 1px solid var(--line, rgba(128,128,128,.25)); }
+details.mod > summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding: 16px 0; }
+details.mod > summary::-webkit-details-marker { display: none; }
+details.mod > summary span { color: var(--muted); font-size: 14px; }
+details.mod > summary::after { content: "+"; margin-left: auto; font-size: 20px; color: var(--muted); }
+details.mod[open] > summary::after { content: "–"; }
+details.mod .fig { margin: 0 0 20px; }
+@media (max-width: 700px) { details.mod > summary { flex-direction: column; gap: 2px; } details.mod > summary::after { position: absolute; right: 0; } details.mod > summary { position: relative; } }
