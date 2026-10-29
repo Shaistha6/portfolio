@@ -28,17 +28,19 @@
 <main class="wrap">
   <div class="cs-hero">
     <a class="back" href="index.html#work">← All work</a>
-    <h1>Face recognition attendance that never leaves a worker stuck</h1>
-    <p class="lede">Workers clock in within seconds on a shared kiosk or their own phone, and always have a way through when a scan fails.</p>
+    <h1>Face-verified clock-in for people working on site</h1>
+    <p class="lede">Employees clock in on their phone with a face scan, choose the project they are working on, and track hours until clock-out.</p>
     <div class="facts">
-      <div><span class="label">Role</span><p>UX/UI Designer: research, flows, UI</p></div>
-      <div><span class="label">Surfaces</span><p>Tablet kiosk, mobile app, admin dashboard</p></div>
+      <div><span class="label">Role</span><p>UX/UI Designer: flows, UI</p></div>
+      <div><span class="label">Surfaces</span><p>Mobile app</p></div>
       <div><span class="label">Design system</span><p>Designsmith</p></div>
-      <div><span class="label">Design goal</span><p>Clock-in in under 2 seconds</p></div>
+      <div><span class="label">Design goal</span><p>Clock in and out in a few taps</p></div>
     </div>
   </div>
 
-  <div class="cs-art art-face" aria-hidden="true"><div class="reticle" style="width:16%"></div></div>
+  <div class="hero-shots">
+    <figure class="fig fig-light"><img src="img/face-recognition-preview.jpg" alt="Clock in, face capture and match screens of the attendance app"></figure>
+  </div>
 
   <div class="chapter">
     <p class="label">The problem</p>
@@ -46,9 +48,7 @@
       <h2>Clock-in apps are slow, unclear and stressful.</h2>
       <ul>
         <li><strong>Unclear scanning:</strong> no guidance on where to place your face or why a scan failed.</li>
-        <li><strong>Kiosk queues:</strong> slow recognition creates lines at shift start; passers-by trigger false scans.</li>
-        <li><strong>Privacy anxiety:</strong> people don't know what biometric data is stored.</li>
-        <li><strong>Dead ends:</strong> a failed scan leaves the worker stuck with no fallback.</li>
+        <li><strong>Dead ends:</strong> a failed scan leaves the worker stuck with no clear way to retry.</li>
       </ul>
     </div>
   </div>
@@ -59,10 +59,10 @@
       <h2>Competitors had strong recognition tech and weak feedback and recovery.</h2>
       <div class="tbl-scroll"><table class="tbl">
         <tr><th>Product</th><th>Strength</th><th>UX gap</th><th>Opportunity</th></tr>
-        <tr><td>Jibble</td><td>Fast mobile clock-in, geofencing</td><td>Confusing kiosk setup; struggles in low light</td><td>Kiosk mode built for high traffic</td></tr>
-        <tr><td>Truein</td><td>Offline mode, strong liveness</td><td>Dated, cluttered admin UI</td><td>Modern UI with offline resilience</td></tr>
+        <tr><td>Jibble</td><td>Fast mobile clock-in, geofencing</td><td>Confusing kiosk setup; struggles in low light</td><td>Clear guidance while scanning</td></tr>
+        <tr><td>Truein</td><td>Offline mode, strong liveness</td><td>Dated, cluttered admin UI</td><td>Simple, modern clock-in</td></tr>
         <tr><td>Keka / Darwinbox</td><td>Full HRMS integration</td><td>Face scan buried in a heavy app</td><td>One-purpose, instant attendance</td></tr>
-        <tr><td>Buddy Punch</td><td>Simple setup</td><td>Weak real-time scan feedback</td><td>Clear live feedback and privacy cues</td></tr>
+        <tr><td>Buddy Punch</td><td>Simple setup</td><td>Weak real-time scan feedback</td><td>Clear live feedback and retry</td></tr>
       </table></div>
     </div>
   </div>
@@ -70,47 +70,41 @@
   <div class="chapter">
     <p class="label">Users</p>
     <div>
-      <h2>Three people, three different jobs.</h2>
-      <div class="tbl-scroll"><table class="tbl">
-        <tr><th>Persona</th><th>Need</th><th>Pain today</th></tr>
-        <tr><td>Shift worker</td><td>Clock in within 1–2 seconds, even offline</td><td>Failed scans delay shift start</td></tr>
-        <tr><td>Floor manager</td><td>A kiosk that runs hands-free all day</td><td>Freezes, lockouts, queues</td></tr>
-        <tr><td>HR / payroll admin</td><td>See anomalies at a glance</td><td>Digging through raw logs</td></tr>
-      </table></div>
+      <h2>Employees who clock in from site, on their own phone.</h2>
+      <ul>
+        <li><strong>Need:</strong> clock in and out in a few taps and see hours at a glance.</li>
+        <li><strong>Pain today:</strong> unclear scans and no easy way to retry.</li>
+        <li><strong>Also needed:</strong> hours recorded against the right project.</li>
+      </ul>
     </div>
+  </div>
+
   </div>
 
   <div class="chapter">
     <p class="label">Key flow</p>
     <div>
-      <h2>Every kiosk clock-in ends recorded, even when the scan fails.</h2>
+      <h2>From clock-in to clock-out in five steps.</h2>
       <div class="flow">
-        <div class="step"><em>01</em><strong>Idle</strong><span>Kiosk waits, ready for the next worker</span></div>
-        <div class="step"><em>02</em><strong>Auto framing</strong><span>Animated reticle guides face position</span></div>
-        <div class="step"><em>03</em><strong>Match?</strong><span>Green check and chime when matched</span></div>
-        <div class="step"><em>04</em><strong>Fallback</strong><span>After 2 failed scans, a PIN option appears</span></div>
-        <div class="step"><em>05</em><strong>Recorded</strong><span>Action pre-selected from the worker's shift</span></div>
+        <div class="step"><em>01</em><strong>Clock in</strong><span>One large button starts the day</span></div>
+        <div class="step"><em>02</em><strong>Face scan</strong><span>Capture, then retake or return</span></div>
+        <div class="step"><em>03</em><strong>Verified</strong><span>Green check with name and role</span></div>
+        <div class="step"><em>04</em><strong>Project</strong><span>Select project, then add area and details</span></div>
+        <div class="step"><em>05</em><strong>Timer</strong><span>Live hours, pause, clock out</span></div>
       </div>
-      <p><strong>Enrollment:</strong> plain-language consent, guided oval capture with turn-left/right liveness, instant confirmation.</p>
-      <p><strong>Mobile clock-in:</strong> geofence check, liveness selfie, and a "Queued for sync" badge when offline.</p>
-      <div class="fr-phones">
-        <figure><img src="img/fr-face.jpg" alt="Face recognition scan with a mesh over the face and a Retake button" loading="lazy"></figure>
-        <figure><img src="img/fr-project.jpg" alt="Select a project screen with a Continue button" loading="lazy"></figure>
-        <figure><img src="img/fr-timer.jpg" alt="Working hours timer with Pause and Clock Out" loading="lazy"></figure>
-      </div>
-      <p class="mini-label" style="margin-top:0">Mobile: face scan, project, then a working-hours timer with pause and clock out.</p>
+      <figure class="fig fig-light"><img src="img/fr-flow-2.jpg" alt="Verification successful screen, select a project, and project details form" loading="lazy"><figcaption>Verification, project selection and details.</figcaption></figure>
+      <figure class="fig fig-light"><img src="img/fr-flow-3.jpg" alt="Working hours timer running, a full 7 hour timer, and the clock out screen" loading="lazy"><figcaption>Timer with pause and clock out, and total working hours.</figcaption></figure>
     </div>
   </div>
 
   <div class="chapter">
     <p class="label">Design system</p>
     <div>
-      <h2>Built on Designsmith, so effort went into the hard problems, not rebuilding buttons.</h2>
+      <h2>Built on Designsmith, so the app matches the rest of the product.</h2>
       <ul>
-        <li><strong>Foundations:</strong> colour, type and spacing tokens kept kiosk, mobile and admin consistent.</li>
-        <li><strong>Reused:</strong> buttons, inputs, modals, badges, tables and navigation.</li>
-        <li><strong>Extended:</strong> scan reticle states, clock-in buttons, sync badges and the fallback PIN modal, all built from the same tokens.</li>
-        <li><strong>Status:</strong> amber = adjust, green = matched, red = failed, always paired with an icon and sound.</li>
+        <li><strong>Foundations:</strong> the same orange accent, cream background and type as the Designsmith app.</li>
+        <li><strong>Reused:</strong> buttons, inputs, headers and navigation.</li>
+        <li><strong>Extended:</strong> the clock-in button, face-scan frame, verification state and working-hours timer.</li>
       </ul>
     </div>
   </div>
@@ -121,23 +115,25 @@
       <h2>Key design decisions</h2>
       <div class="tbl-scroll"><table class="tbl">
         <tr><th>Decision</th><th>Why</th></tr>
-        <tr><td>Animated reticle instead of instruction text</td><td>Workers glance, they don't read, mid-shift</td></tr>
-        <tr><td>Sound + icon + colour for every result</td><td>Works on noisy floors and for colour-blind users</td></tr>
-        <tr><td>Fallback after 2 failed scans</td><td>No one misses a shift start because of glare or a mask</td></tr>
-        <tr><td>Shift-aware pre-selected action</td><td>One less tap at a busy entrance</td></tr>
-        <tr><td>Plain-language privacy screen</td><td>Builds trust: the face is stored as encrypted data, not a photo</td></tr>
-        <tr><td>Large type and touch targets on the kiosk</td><td>Usable with gloves and at arm's length</td></tr>
+        <tr><td>One large Clock In button</td><td>The first action of the day is impossible to miss</td></tr>
+        <tr><td>Capture, with Retake and Return</td><td>A bad scan is never a dead end</td></tr>
+        <tr><td>Verification shows name and role</td><td>Confirms the right person before the day is logged</td></tr>
+        <tr><td>Project and details after verification</td><td>Hours land on the right project</td></tr>
+        <tr><td>Large live timer with Pause and Clock Out</td><td>Hours readable at a glance; end of day is one tap</td></tr>
       </table></div>
     </div>
+  </div>
+
   </div>
 
   <div class="chapter">
     <p class="label">Outcome</p>
     <div>
-      <h2>Designed for speed, trust and recovery across three surfaces.</h2>
+      <h2>A short, clear path from clock-in to clock-out.</h2>
       <ul>
-        <li>Designed for sub-2-second clock-in, no dead-end failures, and offline continuity.</li>
-        <li>One design system let kiosk, mobile and admin work as one product.</li>
+        <li>Nine mobile screens covering scan, verification, project selection and the hours timer.</li>
+        <li>A retry path at every scan step, so a failed scan never blocks the worker.</li>
+        <li>Built from the Designsmith system, so it looks and behaves like the rest of the app.</li>
       </ul>
       <p><strong>What I learned:</strong> in biometric products, the failure state matters as much as the success state.</p>
     </div>
