@@ -45,6 +45,18 @@
   </div>
 
   <div class="chapter">
+    <p class="label">Overview</p>
+    <div>
+      <h2>A mobile-first parcel platform for senders, organizations and drivers.</h2>
+      <ul>
+        <li><strong>Users and organizations</strong> create and track deliveries, find nearby hubs, manage billing and contact support.</li>
+        <li><strong>Drivers</strong> receive and complete delivery tasks, pick up from hubs or users, capture proof of delivery and manage their routes.</li>
+      </ul>
+      <p>The interface is bilingual, in Arabic and English, so the same app serves both audiences.</p>
+    </div>
+  </div>
+
+  <div class="chapter">
     <p class="label">The problem</p>
     <div>
       <h2>Parcel delivery broke down at the handoffs.</h2>
@@ -55,6 +67,20 @@
         <li><strong>Hubs:</strong> slow coordination with drivers and customers; status often out of sync.</li>
       </ul>
       <div class="callout">How might we connect senders, drivers and hubs so every physical action on a parcel becomes a status everyone can trust?</div>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Design goals</p>
+    <div>
+      <h2>One set of goals for senders and another for drivers.</h2>
+      <div class="tbl-scroll"><table class="tbl">
+        <tr><th>Goal</th><th>Sender experience</th><th>Driver experience</th></tr>
+        <tr><td>Efficiency</td><td>Quick parcel requests and instant tracking</td><td>Clear daily task lists with route optimization</td></tr>
+        <tr><td>Transparency</td><td>Live parcel status and delivery updates</td><td>Status synchronized between hub, driver and recipient</td></tr>
+        <tr><td>Simplicity</td><td>Intuitive navigation and minimal inputs</td><td>Smooth scan-and-go task handling</td></tr>
+        <tr><td>Reliability</td><td>Accurate billing and delivery confirmations</td><td>Proof of delivery logged automatically with photo capture</td></tr>
+      </table></div>
     </div>
   </div>
 
@@ -76,6 +102,11 @@
     <p class="label">Users &amp; insights</p>
     <div>
       <h2>Three audiences, one shared need: trust in the parcel's status.</h2>
+      <ul>
+        <li><strong>Individual senders:</strong> casual users who need a quick, reliable parcel service.</li>
+        <li><strong>Organizations:</strong> businesses with frequent deliveries who need bulk tracking.</li>
+        <li><strong>Registered drivers:</strong> authorized field agents managing daily pickups and drop-offs.</li>
+      </ul>
       <div class="tbl-scroll"><table class="tbl">
         <tr><th>Theme</th><th>Insight</th><th>Design direction</th></tr>
         <tr><td>Transparency</td><td>Users want clearer status visibility</td><td>Live tracking and delivery proof</td></tr>
@@ -146,7 +177,7 @@
       <div class="tbl-scroll"><table class="tbl">
         <tr><th>Element</th><th>Choice</th><th>Why</th></tr>
         <tr><td>Colour</td><td>Blue primary, yellow accent, semantic status colours</td><td>Blue for trust; status reads at a glance</td></tr>
-        <tr><td>Type</td><td>Noto Sans Arabic, per client brand guidelines</td><td>Legible at small sizes in the field</td></tr>
+        <tr><td>Type</td><td>Noto Sans Arabic, per client brand guidelines</td><td>Clear, consistent reading in both Arabic and English, legible at small sizes in the field</td></tr>
         <tr><td>Icons</td><td>Outline set, consistent weight</td><td>Fast recognition for scan, pickup, deliver</td></tr>
         <tr><td>Cards</td><td>Rounded, soft shadow, status colour</td><td>Parcel, task and status in one unit</td></tr>
         <tr><td>Navigation</td><td>Bottom bar, 5 tabs per app</td><td>Thumb reach, low cognitive load</td></tr>
@@ -163,6 +194,7 @@
         <li>Parcel creation and live tracking simplified for senders.</li>
         <li>Today's tasks, route and scan in one driver app.</li>
         <li>Trust built through live status and photo proof of delivery.</li>
+        <li>Better coordination between hubs, senders and drivers through synced status updates.</li>
       </ul>
       <p><strong>What I'd measure:</strong> request completion rate, time to complete a delivery task, fewer "where is my parcel" support contacts, and proof-of-delivery capture rate.</p>
       <p><strong>What I learned:</strong> design the ecosystem, not the app. Mapping the service first gave every screen a reason to exist. Next time I'd test the driver flow on the road earlier and design failed-delivery and offline states up front.</p>
