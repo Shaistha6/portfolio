@@ -441,3 +441,8 @@ details.mod > summary::after { content: "+"; margin-left: auto; font-size: 20px;
 details.mod[open] > summary::after { content: "–"; }
 details.mod .fig { margin: 0 0 20px; }
 @media (max-width: 700px) { details.mod > summary { flex-direction: column; gap: 2px; } details.mod > summary::after { position: absolute; right: 0; } details.mod > summary { position: relative; } }
+
+/* Designsmith phone strips */
+.phones { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; align-items: start; background: #f4f2f3; border-radius: 20px; padding: 24px; margin: 0 0 20px; }
+.phones img { width: 100%; height: auto; display: block; border-radius: 14px; }
+@media (max-width: 700px) { .phones { grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 14px; } }
