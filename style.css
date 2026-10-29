@@ -417,3 +417,10 @@ section { padding: 72px 0; }
   .tones { grid-template-columns: repeat(2, 1fr); }
   .focus-pair { grid-template-columns: 1fr; }
 }
+
+/* Tasheel hero screens */
+.hero-shots { display: grid; gap: 20px; margin-top: 16px; }
+.hero-shots .fig { margin: 0; }
+.hero-shots .fig-light img { width: 100%; border-radius: 20px; }
+.hero-shots figcaption { margin-top: 10px; }
+.fig-light img { background: #f4f2f3; border: 0; border-radius: 20px; }
