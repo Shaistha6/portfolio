@@ -459,3 +459,6 @@ details.mod .fig { margin: 0 0 20px; }
 .tds-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; margin-bottom: 8px; }
 .tds-stack { display: grid; gap: 0; }
 @media (max-width: 700px) { .tds-pair { grid-template-columns: 1fr; gap: 0; } }
+
+/* Home hero subtext 18px */
+.hero-copy .role, .hero-copy .statement { font-size: 18px; }
