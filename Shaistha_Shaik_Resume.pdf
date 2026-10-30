@@ -1,105 +1,511 @@
 %PDF-1.4
-%뱦떈 ReportLab Generated PDF document (opensource)
+%웍��
+%QDF-1.0
+
+%% Original object ID: 1 0
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+  /PageMode /UseNone
+  /Pages 3 0 R
+  /Type /Catalog
 >>
 endobj
+
+%% Original object ID: 2 0
 2 0 obj
 <<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+  /Author (Shaistha Shaik)
+  /CreationDate (D:20261024224652+04'00')
+  /Creator (\(unspecified\))
+  /Keywords ()
+  /ModDate (D:20261024224652+04'00')
+  /Producer (ReportLab PDF Library - \(opensource\))
+  /Subject (\(unspecified\))
+  /Title (Shaistha Shaik \204 Resume)
+  /Trapped /False
 >>
 endobj
+
+%% Original object ID: 3 0
 3 0 obj
 <<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+  /Count 1
+  /Kids [
+    4 0 R
+  ]
+  /Type /Pages
 >>
 endobj
+
+%% Page 1
+%% Original object ID: 4 0
 4 0 obj
 <<
-/BaseFont /ZapfDingbats /Name /F3 /Subtype /Type1 /Type /Font
+  /Contents 5 0 R
+  /MediaBox [
+    0
+    0
+    595.2756
+    841.8898
+  ]
+  /Parent 3 0 R
+  /Resources <<
+    /Font 7 0 R
+    /ProcSet [
+      /PDF
+      /Text
+      /ImageB
+      /ImageC
+      /ImageI
+    ]
+  >>
+  /Rotate 0
+  /Trans <<
+  >>
+  /Type /Page
 >>
 endobj
+
+%% Contents for page 1
+%% Original object ID: 5 0
 5 0 obj
 <<
-/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+  /Length 6 0 R
 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 51.35433 770.2047 cm
+q
+.058824 .164706 .290196 rg
+BT 1 0 0 1 0 4 Tm /F2 22 Tf 26 TL (Shaistha Shaik) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 755.2047 cm
+q
+BT 1 0 0 1 0 3.5 Tm 15 TL /F1 11.5 Tf .141176 .341176 .65098 rg (UX/UI & Design Systems Designer � Enterprise, AI & SaaS Products) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 743.2047 cm
+q
+BT 1 0 0 1 0 3 Tm 12 TL /F1 9 Tf .333333 .333333 .333333 rg (Abu Dhabi, UAE  ) Tj (|) Tj (  +971 58 166 9930  ) Tj (|) Tj (  shaistha6@gmail.com  ) Tj (|) Tj (  linkedin.com/in/shaistha-shaik) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 739.2047 cm
+Q
+q
+1 0 0 1 51.35433 718.2047 cm
+q
+.058824 .164706 .290196 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (PROFILE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 715.4047 cm
+q
+.8 w
+1 J
+.141176 .341176 .65098 RG
+n 0 0 m 492.5669 0 l S
+Q
+Q
+q
+1 0 0 1 51.35433 661.0047 cm
+q
+.133333 .133333 .133333 rg
+BT 1 0 0 1 0 41.1 Tm /F1 9.3 Tf 12.6 TL (UX/UI designer with 7+ years in design, including 4+ years in UX and design systems for AI-driven ERP, CRM and) Tj T* (SaaS products. I take work from problem framing and user flows through to tokens, components and production code,) Tj T* (working closely with developers. I simplify complex business workflows into clear interfaces and build systems that) Tj T* (make teams faster.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 640.0047 cm
+q
+.058824 .164706 .290196 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (EXPERIENCE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 637.2047 cm
+q
+.8 w
+1 J
+.141176 .341176 .65098 RG
+n 0 0 m 492.5669 0 l S
+Q
+Q
+q
+1 0 0 1 51.35433 620.2047 cm
+q
+BT 1 0 0 1 0 3.2 Tm 13 TL /F2 9.8 Tf .066667 .066667 .066667 rg (UX & Design Systems Designer \227 Intrakore \(Construction ERP\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 608.7047 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 2.7 Tm /F3 8.8 Tf 11.5 TL (Contract � Remote � Apr 2026 \226 Present) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 606.7047 cm
+Q
+q
+1 0 0 1 51.35433 581.5047 cm
+q
+BT 1 0 0 1 0 15.9 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+.133333 .133333 .133333 rg
+BT 1 0 0 1 10 15.9 Tm /F1 9.3 Tf 12.6 TL (Leading the design system rebuild and rebrand of a fitout/construction ERP \(Frappe V16\), from Figma to production) Tj T* (code.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 554.8047 cm
+q
+BT 1 0 0 1 0 15.9 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+.133333 .133333 .133333 rg
+BT 1 0 0 1 10 15.9 Tm /F1 9.3 Tf 12.6 TL (Built a 3-tier token architecture \(primitive ) Tj /F4 9.3 Tf 12.6 TL <ae> Tj /F1 9.3 Tf 12.6 TL ( semantic ) Tj /F4 9.3 Tf 12.6 TL <ae> Tj /F1 9.3 Tf 12.6 TL ( utility\) mirroring Figma variables: 114 semantic tokens, 600+) Tj T* (CSS variables.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 528.1047 cm
+q
+BT 1 0 0 1 0 15.9 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+.133333 .133333 .133333 rg
+BT 1 0 0 1 10 15.9 Tm /F1 9.3 Tf 12.6 TL (Rebranded 25 Vue components across 20+ apps and three modules: Project Management, Finance and) Tj T* (Procurement.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 514.0047 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+.133333 .133333 .133333 rg
+BT 1 0 0 1 10 3.3 Tm /F1 9.3 Tf 12.6 TL (Built the Intrakore UI documentation site to govern component usage for the engineering team.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 507.5047 cm
+Q
+q
+1 0 0 1 51.35433 494.5047 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3.2 Tm /F2 9.8 Tf 13 TL (UX/UI Designer \227 Techford AI) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 483.0047 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 2.7 Tm /F3 8.8 Tf 11.5 TL (Full-time � UAE � Jun 2022 \226 Apr 2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 481.0047 cm
+Q
+q
+1 0 0 1 51.35433 455.8047 cm
+q
+BT 1 0 0 1 0 15.9 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+.133333 .133333 .133333 rg
+BT 1 0 0 1 10 15.9 Tm /F1 9.3 Tf 12.6 TL (Owned UX and the design system for an AI-focused ERPNext and CRM company, from product UI to the company) Tj T* (website.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 441.7047 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F1 9.3 Tf .133333 .133333 .133333 rg (Built a unified design system and governance standards that ) Tj /F2 9.3 Tf (cut design time by 50%) Tj /F1 9.3 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 415.0047 cm
+q
+BT 1 0 0 1 0 15.9 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+.133333 .133333 .133333 rg
+BT 1 0 0 1 10 15.9 Tm /F1 9.3 Tf 12.6 TL (Designed Tasheel Post end to end: mobile-first parcel delivery apps for senders/organisations and drivers \(parcel) Tj T* (creation, tracking, billing, driver flows\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 400.9047 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F1 9.3 Tf .133333 .133333 .133333 rg (Created the brand identity, contributing to a ) Tj /F2 9.3 Tf (35% increase in brand awareness) Tj /F1 9.3 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 394.4047 cm
+Q
+q
+1 0 0 1 51.35433 381.4047 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3.2 Tm /F2 9.8 Tf 13 TL (Graphic Designer \227 Fazvee Digital) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 369.9047 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 2.7 Tm /F3 8.8 Tf 11.5 TL (Full-time � Feb 2019 \226 May 2022) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 367.9047 cm
+Q
+q
+1 0 0 1 51.35433 355.3047 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+.133333 .133333 .133333 rg
+BT 1 0 0 1 10 3.3 Tm /F1 9.3 Tf 12.6 TL (Delivered brand and digital design for a marketing agency and its clients.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 341.2047 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F1 9.3 Tf .133333 .133333 .133333 rg (Designed menus, posters and social campaigns for a restaurant client, contributing to a ) Tj /F2 9.3 Tf (30% increase in sales) Tj /F1 9.3 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 334.7047 cm
+Q
+q
+1 0 0 1 51.35433 313.7047 cm
+q
+.058824 .164706 .290196 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (SELECTED WORK) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 310.9047 cm
+q
+.8 w
+1 J
+.141176 .341176 .65098 RG
+n 0 0 m 492.5669 0 l S
+Q
+Q
+q
+1 0 0 1 51.35433 294.3047 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F2 9.3 Tf .133333 .133333 .133333 rg (Intrakore ERP Design System) Tj /F1 9.3 Tf ( \227 tokens, Vue components, docs site (on request), live in production) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 280.2047 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F2 9.3 Tf .133333 .133333 .133333 rg (Tasheel Post) Tj /F1 9.3 Tf ( \227 parcel delivery sender and driver apps) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 266.1047 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F2 9.3 Tf .133333 .133333 .133333 rg (Live websites designed and built) Tj /F1 9.3 Tf ( \227 researchon.ai, silverpeak-ca.com, gasis.ae) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 245.1047 cm
+q
+.058824 .164706 .290196 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (SKILLS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 242.3047 cm
+q
+.8 w
+1 J
+.141176 .341176 .65098 RG
+n 0 0 m 492.5669 0 l S
+Q
+Q
+q
+1 0 0 1 51.35433 167.9047 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 54.8 cm
+q
+.133333 .133333 .133333 rg
+BT 1 0 0 1 0 3.3 Tm /F2 9.3 Tf 12.6 TL (UX/UI) Tj T* ET
+Q
+Q
+q
+1 0 0 1 90.70866 54.8 cm
+q
+.133333 .133333 .133333 rg
+BT 1 0 0 1 0 3.3 Tm /F1 9.3 Tf 12.6 TL (User flows, wireframing, prototyping, design thinking, responsive and mobile-first design) Tj T* ET
+Q
+Q
+q
+1 0 0 1 0 37.2 cm
+q
+.133333 .133333 .133333 rg
+BT 1 0 0 1 0 3.3 Tm /F2 9.3 Tf 12.6 TL (Design systems) Tj T* ET
+Q
+Q
+q
+1 0 0 1 90.70866 37.2 cm
+q
+.133333 .133333 .133333 rg
+BT 1 0 0 1 0 3.3 Tm /F1 9.3 Tf 12.6 TL (Design tokens, component libraries, documentation, governance, Figma variables) Tj T* ET
+Q
+Q
+q
+1 0 0 1 0 19.6 cm
+q
+.133333 .133333 .133333 rg
+BT 1 0 0 1 0 3.3 Tm /F2 9.3 Tf 12.6 TL (Build) Tj T* ET
+Q
+Q
+q
+1 0 0 1 90.70866 19.6 cm
+q
+.133333 .133333 .133333 rg
+BT 1 0 0 1 0 3.3 Tm /F1 9.3 Tf 12.6 TL (HTML, CSS, JavaScript, Vue.js, WordPress/Elementor, Frappe/ERPNext) Tj T* ET
+Q
+Q
+q
+1 0 0 1 0 2 cm
+q
+.133333 .133333 .133333 rg
+BT 1 0 0 1 0 3.3 Tm /F2 9.3 Tf 12.6 TL (Tools) Tj T* ET
+Q
+Q
+q
+1 0 0 1 90.70866 2 cm
+q
+.133333 .133333 .133333 rg
+BT 1 0 0 1 0 3.3 Tm /F1 9.3 Tf 12.6 TL (Figma, Adobe Photoshop, Illustrator, After Effects, Claude Code) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 51.35433 146.9047 cm
+q
+BT 1 0 0 1 0 2.5 Tm 13 TL /F2 10.5 Tf .058824 .164706 .290196 rg (EDUCATION & CERTIFICATIONS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 144.1047 cm
+q
+.8 w
+1 J
+.141176 .341176 .65098 RG
+n 0 0 m 492.5669 0 l S
+Q
+Q
+q
+1 0 0 1 51.35433 127.5047 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F2 9.3 Tf .133333 .133333 .133333 rg (Bachelor of Science) Tj /F1 9.3 Tf ( \(Biotechnology\) \227 Sri Venkateswara University) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 113.4047 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F2 9.3 Tf .133333 .133333 .133333 rg (Enterprise Design Thinking Practitioner) Tj /F1 9.3 Tf ( \227 IBM SkillsBuild \(2025\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 99.30472 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F2 9.3 Tf .133333 .133333 .133333 rg (UX certification) Tj /F1 9.3 Tf ( \227 Interaction Design Foundation \(IxDF\)) Tj T* ET
+Q
+Q
+ 
+endstream
 endobj
-6 0 obj
-<<
-/Contents 11 0 R /MediaBox [ 0 0 612 792 ] /Parent 10 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
 
->> 
-  /Type /Page
->>
+6 0 obj
+9504
 endobj
+
+%% Original object ID: 7 0
 7 0 obj
 <<
-/Contents 12 0 R /MediaBox [ 0 0 612 792 ] /Parent 10 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
+  /F1 8 0 R
+  /F2 9 0 R
+  /F3 10 0 R
+  /F4 11 0 R
 >>
 endobj
+
+%% Original object ID: 8 0
 8 0 obj
 <<
-/PageMode /UseNone /Pages 10 0 R /Type /Catalog
+  /BaseFont /Helvetica
+  /Encoding /WinAnsiEncoding
+  /Name /F1
+  /Subtype /Type1
+  /Type /Font
 >>
 endobj
+
+%% Original object ID: 9 0
 9 0 obj
 <<
-/Author (\(anonymous\)) /CreationDate (D:20260421151536+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260421151536+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+  /BaseFont /Helvetica-Bold
+  /Encoding /WinAnsiEncoding
+  /Name /F2
+  /Subtype /Type1
+  /Type /Font
 >>
 endobj
+
+%% Original object ID: 10 0
 10 0 obj
 <<
-/Count 2 /Kids [ 6 0 R 7 0 R ] /Type /Pages
+  /BaseFont /Helvetica-Oblique
+  /Encoding /WinAnsiEncoding
+  /Name /F3
+  /Subtype /Type1
+  /Type /Font
 >>
 endobj
+
+%% Original object ID: 11 0
 11 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 2706
+  /BaseFont /Symbol
+  /Name /F4
+  /Subtype /Type1
+  /Type /Font
 >>
-stream
-GauHM>BAfD&q9SYka.e`3C^&2n.r3e;r2$)Nkm)iWr+VC"&+e5>$W7eji=9G7`*#II6pd`gHouIYGZ;G@tBJ$QMMQ=!2#&9l.,pZL>`t#f5P/C&,kJ+[gT7*l2!jc3bg(!n\&A!<mS7jYT;'X\R7CGf=*i'9eI&`i7Qsj?(B]iVi8OgV[HGjK]D`6VE2rX3!on<I>C=aW[64gj>O-!E=X")qeZkE@i@M^`sKWp>(\7;Gqikq&$m?dp]h4W_PPLKGj95Bo1f2^m6+S/Dh.5D:<s-^ZTYc&7`Rm#:6!d[CTR='ENG1q%p?e`'10n1(k+uuWn4uPAb]Q\]E:V>"g`SA<1_e/igJ0)$K[)]+Q\/^&S_>3iG\[krrKc[rUb+82`qn?KP)7A2e!s<(;X8jQ$JLs6=t-CCrj!3?NX#H$Q-qR#YrE!HB-bMh?3&kn/1H6L/qX:ScA:,Ag/u3)/mSU?tCbE.Us^>2?kCgb]kNK>5:`8TBZm?oJ#$e5%7/#jooWNBuLGF]"gD0`O!Zi]ZOD97i_C3VqJ_2ZL=[H[%<j2Du51'h;b\?pFpi;Gdr)!?S1T`<Tp4FY$kD7KF\G1rNaV6T79_XCdO'bmA%TH6nm9%X690@>nKo:CEa<_Dh@H8A+=pU`e'f!i[?A0)/"YjF'qQF+YW>RgG0F).<l+;p.LV+g$D$>;fM^F9?sg_j;=aR.<!B4pn'"5SH99FJZ#IuA3Q:C-!ZE;^,"bMIlujZO^C#Kr)0)-/(!VkGfo*;-\*GX%,Et+=\._/4@6S7O\B.8nrcGh'$t;i*_#]RXF,fb3N(\C=U5^VP-K*YJm=kNP$sU6Vfj2H*)Ro'gmm:g/u+Sqjb+c:\-E81bXEkB(oQI"WedROQNGT/L1NUt:W6kure:K2@_!+=eDShoKT7?&efRt&OS37?MD$5[h%=+Y-nMH-KL2dkGVDj&,U^cYQjM1L*rQ>C&64EtECYamZB6[G(e$OneJ9'"MY[uC7GjS*&ij%fs!GVtI?mp,%!e8<1+OIqMZR7nGrXb.(eRd6[4F91)nq)WmB,7/3G-0Rs+*+85<egMn=R>iqnW;9D#]_PW,e*f<,qWq6t9]s52'YMJDCXZ<O?r#?aO\cp5Op2b(j'T#Ht6ko^+3LY`*2bqVt>Afq*V(;4E[O]j;t880a_pPRq>.kPV>Zd0ltQoeCU?ibfEG,7SS1oFZ*CX.gdH0V0nT.OtE*5#\D4lT3N!b<>-5Sb&nkOTdqGh"(mMbk%'@LmdjY5,sQbO"0PR3MfZBF0E#eH-ToW[j'i$Qq]9tI9/E>%InY1c,PlN^l8apb,/o]Ns[K-S1<<m^%Vh')Ek9Kcajr2EYbE+7hMWq"#A<n)6`s(f3?!hobLm/<F,+\=5u;p]IKl6,<<$_\P^m1$Ao!7ekL.2+JUq$bme[%nda:)?K\haH#h3Xs8(5p^?bfFh;;T0\>En\:JO!ADQhpi#[?0rkN-Kk5pH#tE&t_<Q-D4(_UY`"B7g1f6`cct`#Z(4Xbc/@m<<=5H!<a8]+?^S2Q4=V&mh^NB\`-KmBZ/c@)mIQV@SDsG?bZ<_sP"#V7Qt>b(PCag,?Ut=Lp\-4==lAMq;uWM2]W`OP8cBEherDooHgC'[kf,'jn(<#O[`T).S[H7<'Y^$^U=9k;eKei-7IO1!O5hR=^<aHm40"S^e.%(,^o6hF3+YL.IY5O@e6.Akd!X$G<_?&C#/6lSS)\M[Z<'H.F#MI1;t5-$$b#\mJjV(K?]Z=ho*sMr]p7M6R=g;BQ>f8XU6?c36[N<5TPC'Q2V=q;[-&3$l4)TM4MnTWHF6</Tb35[0YU-HISSeVEVH!_L)FbB]8;MK@f)'1IL1PH6_l9M.Uh*%bWZ?n9Z_qMEQOn3+t36W\#H]G$ug;Tp->^M<j,=?'A?W=0Drrd':Ui5%.kAt55B">!:c.R7p(&Ok1K@KeaAhPpn]+fK;A<#<6J";$^,(ZeH[EL?qT$0o:j@MDp(-u=]$i+YJHnQg?ipn&N45Mt0pH.-&prIbY`Dkg9+,+(n:*CT>JVt&LHL+\=t.$<"j-9dEglHGUYMm:!oYc9O*=@],T<J2i%.,3m_TrOG8'$='bjXcOP8@:\Q.3n^S"O)$HYg!dGGf[M&B2qnOR6Rf[,@Bp)T5S>m<DKZS./&)7H!M4.33p.@AcEidn<T-@P%@9[KiV!I_?[O!M=Fk(FH9"IQ@F;XZIe61=B;*cCJPmH"N<dM<>Q>i#NPi.Y'j!_?Y)bP:*UMO.7$Su.-38G>'7]`F%Su?:P^aYQ5RSdP]BS<'o-&:o%[0?_E!ZfMXVGa%.S_2T`%gPF^%Z5&gB>u]!'frPSB66SDs191<^n`p4qq#4e]0bS@pObK"$2"?%^K5<]t%m^FF3BLdj!&#0/haMF9XVM^@\g%p6p$iiVm2l`"](`C`fl5t$-E(ipaY=>2f>h>5/L:>7U!#M0D$PnG->Z#ZrbJ4Q>:1;S0g9am,71A+9qBJ`]=0IAEpWRqedO1;PL$]6]4(`%kU^W%1="k=l$[c?bGW+*HVKU6B8$>ZOa;(;-=eS#qh<1KoP+J5?1X+!:^`iFsh*34R;?YunA)BJLjf)Z+/YhRur')_.5dVaf^3Wn_\OiS+VT80n:pNM\:@@nXVoWO#T>2m85S?sZH=f5VF\sokU2-ns+i*2i<HU&FH0*55)>qKa'YqpaGcDi<n\n^X-(9u9f>l5%dA/dW~>endstream
 endobj
-12 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 731
->>
-stream
-Gatn#9lo#B&;KZOMESACdhkaW5!f;k3_Z2S-9Z<&[VV2^(7!r7biHfgD(oZ+/NIo8@r&HP=0)'uR=L,)C#3h10F4@2,![Q0.1k7<+e6>%m/643A#;U&+$=:I-n]Jq+D0Q$2AjAPIFeOQK$69S6Vc(JK<T$2K1=Fl7Ct?&PpiCI&uKnSK$mZ9"fRF5`KB.k#-:L9[CF0d,Wt,`20UG/&)_#hit>$jId\l/Ya+4)`EI[RAb/$fPa7HoU;Z<(N)5BZXOLMDD]jFZn.Too?>3GJ]T*c%:2]f/;<m,M^u^OamSuZB/b^Accl31'Q06Li`1"N5A=2r3?r:pg)RU1'MTBIT66Eu$o@?QD*P=Lm\,g;LrkhN8gK>biTW&W]=hBP28Dk-Qhf<C\4=nF%e]SB4iH.+`^^!t88)[s-55]UjY4!OPAm9k>*CddfB&Brs$ALng3rm/[d%5aOPg.n`*7MlA9upa_;:RI,eT\BZIAp]d2U=9J$ga$.]Guq"VaprFBj/tMc&Q$'6K26;!l&fR[RdaEoZ5U&J)L5+K=X"'mhKVClYq[OLeW=[hHrfY_"\9+!44i#?f(Innatd4-'n<*&Q/+:5aRBN7.H#n6@MntCaL%;9A4^I6go*i*0hFNYWTI:51;aI@_&p[\mX1?ZQ4/<%W"K0Z[saGBm[k'LSpSAh-&#IKblL9?nX!d2(AG(<6[k8DeUPnUhY>kY\0)'h7P0G3kk[BU/$1~>endstream
-endobj
-xref
-0 13
-0000000000 65535 f 
-0000000061 00000 n 
-0000000122 00000 n 
-0000000229 00000 n 
-0000000341 00000 n 
-0000000424 00000 n 
-0000000539 00000 n 
-0000000734 00000 n 
-0000000929 00000 n 
-0000000998 00000 n 
-0000001278 00000 n 
-0000001344 00000 n 
-0000004142 00000 n 
-trailer
-<<
-/ID 
-[<a897d2de3779a3da9f476e46777827cd><a897d2de3779a3da9f476e46777827cd>]
-% ReportLab generated PDF document -- digest (opensource)
 
-/Info 9 0 R
-/Root 8 0 R
-/Size 13
+xref
+0 12
+0000000000 65535 f 
+0000000052 00000 n 
+0000000154 00000 n 
+0000000491 00000 n 
+0000000600 00000 n 
+0000000928 00000 n 
+0000010487 00000 n 
+0000010535 00000 n 
+0000010634 00000 n 
+0000010779 00000 n 
+0000010930 00000 n 
+0000011085 00000 n 
+trailer <<
+  /Info 2 0 R
+  /Root 1 0 R
+  /Size 12
+  /ID [<e66716859f696c4cae68630fb8003758><dc3737a66c6b7d1ca8d3314305027c0e>]
 >>
 startxref
-4964
+11172
 %%EOF
