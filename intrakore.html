@@ -75,6 +75,7 @@
     <ul>
       <li><strong>Palette.</strong> Blueprint, Dusk, Clearing, a brand-tinted neutral, Plaster and Iron.</li>
       <li><strong>Ramp over brand hex.</strong> Primary is #000FCC, not the brand's #000FCE, so every step of the ramp reads evenly.</li>
+      <li><strong>Type.</strong> ITC Avant Garde Gothic Pro for headings and Avenir for body and UI text, both set as type tokens. The Avenir files arrived as OTF and I converted them to woff2.</li>
       <li><strong>Dark mode, not inverted.</strong> The brand's dark colours, Sky and Mist, broke the sidebar, so dark uses lighter Blueprint and Dusk stops.</li>
     </ul>
     <figure class="fig"><img src="img/ik-docs-colours.jpg" alt="Blueprint and Dusk ramps, light and dark, from the Intrakore UI docs." loading="lazy"><figcaption>Blueprint and Dusk ramps, light and dark, from the Intrakore UI docs.</figcaption></figure>
@@ -84,9 +85,9 @@
     <span class="label">03 · Components</span>
     <h2>Two libraries, one token set. Gray at rest, Blueprint on interaction.</h2>
     <ul>
-      <li><strong>Vue library · intrakore-ui (npm).</strong> 25 components: forms, tables, navigation, charts, calendar, feedback and a dashboard card header.</li>
-      <li><strong>Native JS library · IK_Components.</strong> For desk dashboards, which are plain JavaScript pages. Includes nine chart types on ECharts.</li>
-      <li><strong>114 tokens, one source</strong> behind both.</li>
+      <li><strong>Vue library · intrakore-ui (npm).</strong> 25 components: forms, tables, navigation, charts, calendar, feedback and a dashboard card header. It keeps Tailwind.</li>
+      <li><strong>Native JS library · IK_Components.</strong> I ported the shared components to native JS and plain CSS for desk pages that don't load Vue. Includes nine chart types on ECharts.</li>
+      <li><strong>114 tokens, one source</strong> behind both: the Vue library and the native one read the same tokens.</li>
     </ul>
     <p class="mini-label">The outline button: one rule across five states</p>
     <div class="states">
