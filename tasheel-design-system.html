@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tasheel Post Design System · Shaistha Shaik</title>
+<meta name="description" content="Design system for the Tasheel Post parcel delivery apps, 2023–2024: colour, type, icons and components, designed by Shaistha Shaik.">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js"></script>
+<script src="cursor.js"></script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <ul>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="Shaistha_Shaik_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      <li class="hide-sm"><a href="index.html#about">About</a></li>
+      <li><a href="mailto:shaistha6@gmail.com">Contact</a></li>
+      <li><button class="toggle" aria-label="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="cs-hero">
+    <a class="back" href="index.html#work">← All work</a>
+    <h1>Tasheel Post design system</h1>
+    <p class="lede">One set of colours, type, icons and components behind two parcel delivery apps, so a status, a card or a button looks and behaves the same everywhere.</p>
+    <div class="facts">
+      <div><span class="label">Role</span><p>Designer: foundations and components</p></div>
+      <div><span class="label">Year</span><p>2023–2024</p></div>
+      <div><span class="label">Used in</span><p>Tasheel Post customer and driver apps</p></div>
+      <div><span class="label">Tools</span><p>Figma</p></div>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Why a system</p>
+    <div>
+      <h2>Two apps, one status language.</h2>
+      <p>Senders and drivers use different apps but look at the same parcel. Shared foundations and components meant a shipment status, a button or a tab reads the same on both sides.</p>
+      <div class="stats">
+        <div class="stat"><strong>8</strong><span>colour scales, 50 to 900</span></div>
+        <div class="stat"><strong>11</strong><span>type sizes</span></div>
+        <div class="stat"><strong>4</strong><span>font weights</span></div>
+        <div class="stat"><strong>1</strong><span>outline icon set</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Colour</p>
+    <div>
+      <h2>Eight scales, each step checked for contrast.</h2>
+      <ul>
+        <li><strong>Brand:</strong> primary blue for trust, with a lighter secondary blue, green and yellow.</li>
+        <li><strong>Status:</strong> success, warning and error scales, plus neutrals for text and surfaces.</li>
+        <li><strong>Documented:</strong> every swatch lists its hex and RGB values and its contrast ratio against black and white, with the AA or AAA result.</li>
+      </ul>
+      <figure class="fig tds-fig"><img src="img/tds-palette-a.png" alt="Primary blue, secondary light blue, secondary green and secondary yellow scales" loading="lazy"><figcaption>Brand scales: primary blue, secondary light blue, green and yellow.</figcaption></figure>
+      <figure class="fig tds-fig"><img src="img/tds-palette-b.png" alt="Success, warning, error and neutral scales" loading="lazy"><figcaption>Status scales and neutrals.</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Typography</p>
+    <div>
+      <h2>Noto Sans, one scale, four weights.</h2>
+      <p>Eleven sizes, from Display 2xlarge down to Text xsmall, each in Regular, Medium, Semibold and Bold. Headings, labels and body text all pull from the same table.</p>
+      <figure class="fig tds-fig"><img src="img/tds-type.png" alt="Type scale in Regular, Medium, Semibold and Bold" loading="lazy"><figcaption>Type scale: Display and Text styles in four weights.</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Icons</p>
+    <div>
+      <h2>An outline icon set with one stroke weight.</h2>
+      <p>Arrows, actions, status, devices, communication and delivery icons share one outline style, so they stay quick to recognise at small sizes.</p>
+      <figure class="fig tds-fig"><img src="img/tds-icons.png" alt="Outline icon set" loading="lazy"><figcaption>The icon library.</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Components</p>
+    <div>
+      <h2>Small, reusable pieces with defined states.</h2>
+      <p class="mini-label">Selection controls, chips and steppers</p>
+      <div class="tds-pair">
+        <figure class="fig tds-fig"><img src="img/tds-checkbox.png" alt="Checkbox, radio and check-circle controls in default, active, focus and disabled states, in two sizes" loading="lazy"><figcaption>Checkbox, radio and check circle: default, active, focus and disabled, in two sizes.</figcaption></figure>
+        <div class="tds-stack">
+          <figure class="fig tds-fig"><img src="img/tds-chips.png" alt="Filter chips for 7, 30, 60 and 90 days with one selected" loading="lazy"><figcaption>Filter chips with a selected state.</figcaption></figure>
+          <figure class="fig tds-fig"><img src="img/tds-stepper.png" alt="Four-step stepper: Register, Verify email, About, Verify phone" loading="lazy"><figcaption>Stepper for registration: done, current and upcoming.</figcaption></figure>
+        </div>
+      </div>
+
+      <p class="mini-label">Cards</p>
+      <figure class="fig tds-fig"><img src="img/tds-quick.png" alt="Quick action tiles: Request a Service, Need help Contact us, Find Location, My Bills, in default, selected and disabled states" loading="lazy"><figcaption>Quick actions: default, selected and disabled.</figcaption></figure>
+      <figure class="fig tds-fig"><img src="img/tds-ship.png" alt="My Shipments cards for arriving and departing shipments in default, selected and disabled states" loading="lazy"><figcaption>Shipment count cards: default, selected and disabled.</figcaption></figure>
+
+      <p class="mini-label">Navigation, badges and banners</p>
+      <div class="tds-pair">
+        <div class="tds-stack">
+          <figure class="fig tds-fig"><img src="img/tds-nav.png" alt="Bottom navigation with Home, Track, Shipping and Menu, each shown as the active tab" loading="lazy"><figcaption>Bottom navigation: Home, Track, Shipping, Menu.</figcaption></figure>
+          <figure class="fig tds-fig"><img src="img/tds-bell.png" alt="Notification bell with a yellow badge in four states" loading="lazy"><figcaption>Notification bell with badge.</figcaption></figure>
+        </div>
+        <figure class="fig tds-fig"><img src="img/tds-banner.jpg" alt="Banner carousel with four slides, page indicators and a text-only banner" loading="lazy"><figcaption>Banner carousel with page indicators.</figcaption></figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Decisions</p>
+    <div>
+      <h2>Key design decisions</h2>
+      <div class="tbl-scroll"><table class="tbl">
+        <tr><th>Decision</th><th>Why</th></tr>
+        <tr><td>Scales from 50 to 900 with contrast shown</td><td>Anyone can pick an accessible pair without checking by hand</td></tr>
+        <tr><td>Blue primary, yellow accent</td><td>Blue reads as trust; yellow draws the eye to badges</td></tr>
+        <tr><td>Separate success, warning and error scales</td><td>Status colours stay distinct from the brand blue</td></tr>
+        <tr><td>One type family with a fixed scale</td><td>Consistent hierarchy; no one-off sizes</td></tr>
+        <tr><td>Outline icons at one weight</td><td>Quick recognition at small sizes</td></tr>
+        <tr><td>Every control has a focus and disabled state</td><td>Usable by keyboard and clear when unavailable</td></tr>
+      </table></div>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <p class="label">Outcome</p>
+    <div>
+      <h2>A shared kit for two apps.</h2>
+      <ul>
+        <li>Foundations and components documented once in Figma and reused across the customer and driver apps.</li>
+        <li>Colour pairs come with contrast results, so accessibility decisions are visible.</li>
+        <li>Components cover selection, cards, navigation, badges and banners, each with its states.</li>
+      </ul>
+      <p><strong>What I learned:</strong> documenting states early, including focus and disabled, saved rework later, because every screen already had the right variant to reach for.</p>
+      <p>See the apps this system was built for: <a href="tasheel-post.html">Tasheel Post case study →</a></p>
+    </div>
+  </div>
+
+  <div class="next">
+    <a class="back" href="index.html#work">← All work</a>
+    <div><p class="label">Next case study</p><a class="big" href="designsmith.html">Designsmith Employee App →</a></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <div>Designed and built with Claude Code in Abu Dhabi, UAE<br>© 2026 Shaistha Shaik</div>
+    <div class="links"><a href="mailto:shaistha6@gmail.com">Email</a><a href="https://www.linkedin.com/in/shaistha-shaik" target="_blank" rel="noopener">LinkedIn</a><a href="Shaistha_Shaik_Resume.pdf" target="_blank" rel="noopener">Resume</a></div>
+  </div>
+</footer>
+</body>
+</html>

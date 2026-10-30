@@ -452,3 +452,10 @@ details.mod .fig { margin: 0 0 20px; }
 .fr-phones figure { margin: 0; }
 .fr-phones img { width: 100%; height: auto; display: block; border-radius: 14px; }
 @media (max-width: 700px) { .fr-phones { gap: 8px; padding: 12px; } }
+
+/* Tasheel design system page */
+.tds-fig { margin: 0 0 20px; }
+.tds-fig img { background: #fff; border-radius: 16px; width: 100%; height: auto; display: block; border: 1px solid rgba(128,128,128,.18); }
+.tds-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; margin-bottom: 8px; }
+.tds-stack { display: grid; gap: 0; }
+@media (max-width: 700px) { .tds-pair { grid-template-columns: 1fr; gap: 0; } }
