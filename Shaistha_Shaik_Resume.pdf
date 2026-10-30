@@ -291,7 +291,7 @@ q
 1 0 0 1 51.35433 294.3047 cm
 q
 BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
-BT 1 0 0 1 10 3.3 Tm 12.6 TL /F2 9.3 Tf .133333 .133333 .133333 rg (Intrakore ERP Design System) Tj /F1 9.3 Tf ( \227 tokens, Vue components, docs site (on request), live in production) Tj T* ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F2 9.3 Tf .133333 .133333 .133333 rg (Intrakore ERP Design System) Tj /F1 9.3 Tf ( \227 tokens, Vue components, docs site \(on request\), live in production) Tj T* ET
 Q
 Q
 q
@@ -422,7 +422,21 @@ q
 1 0 0 1 51.35433 99.30472 cm
 q
 BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
-BT 1 0 0 1 10 3.3 Tm 12.6 TL /F2 9.3 Tf .133333 .133333 .133333 rg (UX certification) Tj /F1 9.3 Tf ( \227 Interaction Design Foundation \(IxDF\)) Tj T* ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F2 9.3 Tf .133333 .133333 .133333 rg (IxDF certifications) Tj /F1 9.3 Tf ( \227 UX, Visual Design, Web Design, Thought & Emotion \(2025\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 85.2047 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F2 9.3 Tf .133333 .133333 .133333 rg (NASA Space Apps Challenge) Tj /F1 9.3 Tf ( \227 Global Nominee, TEMPO Data Visualization \(2025\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 71.1047 cm
+q
+BT 1 0 0 1 0 3.3 Tm /F1 10 Tf 12 TL .133333 .133333 .133333 rg <7f> Tj ET
+BT 1 0 0 1 10 3.3 Tm 12.6 TL /F2 9.3 Tf .133333 .133333 .133333 rg (UX Design Cycle) Tj /F1 9.3 Tf ( \227 OpenBootcamp \(2023\)) Tj T* ET
 Q
 Q
  
@@ -430,7 +444,7 @@ endstream
 endobj
 
 6 0 obj
-9504
+10062
 endobj
 
 %% Original object ID: 7 0
@@ -494,18 +508,18 @@ xref
 0000000491 00000 n 
 0000000600 00000 n 
 0000000928 00000 n 
-0000010487 00000 n 
-0000010535 00000 n 
-0000010634 00000 n 
-0000010779 00000 n 
-0000010930 00000 n 
-0000011085 00000 n 
+0000011045 00000 n 
+0000011094 00000 n 
+0000011193 00000 n 
+0000011338 00000 n 
+0000011489 00000 n 
+0000011644 00000 n 
 trailer <<
   /Info 2 0 R
   /Root 1 0 R
   /Size 12
-  /ID [<e66716859f696c4cae68630fb8003758><dc3737a66c6b7d1ca8d3314305027c0e>]
+  /ID [<e66716859f696c4cae68630fb8003758><626c1655c091d440dc1b9be2fc7ffecf>]
 >>
 startxref
-11172
+11731
 %%EOF
