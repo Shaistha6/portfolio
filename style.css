@@ -462,3 +462,17 @@ details.mod .fig { margin: 0 0 20px; }
 
 /* Home hero subtext 18px */
 .hero-copy .role, .hero-copy .statement { font-size: 18px; }
+
+/* airflow */
+.aqi { width: 100%; }
+.aqi-bar { position: relative; display: flex; height: 18px; border-radius: 9px; overflow: visible; }
+.aqi-bar i { flex: 1; display: block; }
+.aqi-bar i:first-child { border-radius: 9px 0 0 9px; background: #3fa66b; }
+.aqi-bar i.m { background: #e9b93a; }
+.aqi-bar i.u { border-radius: 0 9px 9px 0; background: #e8803a; }
+.aqi-bar b { position: absolute; top: -6px; width: 6px; height: 30px; margin-left: -3px; border-radius: 3px; background: var(--ink); box-shadow: 0 0 0 2px var(--card-bg, #fff); }
+.aqi-lab { display: flex; justify-content: space-between; gap: 8px; margin-top: 10px; font-size: 13px; opacity: .75; }
+figure.fig:has(.aqi) { padding: 32px 28px 20px; }
+.card .thumb .aqi-thumb { display: flex; flex-direction: column; justify-content: center; gap: 18px; padding: 8px 12px; }
+.aqi-thumb strong { font-size: 54px; line-height: 1; letter-spacing: -.02em; }
+.aqi-thumb strong small { display: block; font-size: 13px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; opacity: .6; margin-bottom: 6px; }
