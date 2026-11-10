@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Intrakore Design System · Shaistha Shaik</title>
-<meta name="description" content="Intrakore case study: one design system for a 23-app construction ERP, from hand-built colour ramps to shipped component libraries and a theming app every module inherits, by Shaistha Shaik.">
+<meta name="description" content="Intrakore case study: one design system for a 20+ app construction ERP, from hand-built colour ramps to shipped component libraries and a theming app every module inherits, by Shaistha Shaik.">
 <link rel="stylesheet" href="style.css">
 <script src="theme.js"></script>
 <script src="cursor.js"></script>
@@ -29,13 +29,15 @@
   <div class="cs-hero">
     <a class="back" href="index.html#work">← All work</a>
     <h1>Intrakore: one design system for a construction ERP</h1>
-    <p class="lede">I designed and engineered the design system behind a 23-app ERP, from hand-built colour ramps to shipped component libraries and a theming app every module inherits.</p>
+    <p class="lede">I designed and engineered the design system behind a 20+ app ERP, from hand-built colour ramps to shipped component libraries and a theming app every module inherits.</p>
     <div class="facts">
       <div><span class="label">Role</span><p>Design Engineer, Design Systems</p></div>
       <div><span class="label">Platform</span><p>Frappe V16 ERP · 20+ apps</p></div>
       <div><span class="label">What I did</span><p>Foundations, tokens, Figma library, two component libraries, desk theming app, accessibility fixes, governance and docs site. I designed it and shipped the code.</p></div>
       <div><span class="label">What the team did</span><p>Built the module dashboards and backends, and handled deployment. I set the system they build on and reviewed their pages against it.</p></div>
     </div>
+    <p><strong>My role:</strong> I was the sole owner of the design system's design and front-end code. I led the tokens, the Figma library, both component libraries and the theming app. Engineers owned the backend, deployment and npm releases. I contributed through their ticket and PR flow and reviewed their pages against the system.</p>
+    <p><em>I decided what the system was. Engineers decided how it shipped.</em></p>
   </div>
 
   <figure class="fig hero-fig"><img src="img/intrakore.png" alt="Intrakore Bid list in light and dark mode"></figure>
@@ -44,7 +46,7 @@
     <div class="stats">
       <div class="stat"><strong>25</strong><span>Vue components</span></div>
       <div class="stat"><strong>114</strong><span>Semantic tokens in code</span></div>
-      <div class="stat"><strong>23</strong><span>Apps on one system</span></div>
+      <div class="stat"><strong>20+</strong><span>Apps on one system</span></div>
       <div class="stat"><strong>2</strong><span>Runtimes, one token set</span></div>
     </div>
   </div>
@@ -132,6 +134,7 @@
       <li><strong>Keyboard vs mouse focus.</strong> Bootstrap kept a grey ring after every click. I split it: 2px on keyboard focus, 1px after a click.</li>
       <li><strong>Restored, not copied.</strong> When an upstream update deleted a component's focus ring, I put it back.</li>
     </ul>
+    <p>I designed to AA for text contrast and focus. It has not had a formal accessibility audit.</p>
     <p><strong>Next:</strong> reduced motion, a screen-reader pass and right-to-left (Arabic) layout.</p>
   </div>
 
@@ -153,10 +156,20 @@
       <div class="stat"><strong>2</strong><span>Dashboards re-aliased to global fonts</span></div>
       <div class="stat"><strong>1</strong><span>Reference dashboard rebuilt on shared components, in review</span></div>
     </div>
+    <p>I also replaced broken upstream token classes across the Vue library (<code>rounded-3</code> to <code>rounded-6</code>, <code>bg-surface-base</code>, <code>outline-elevation-2</code>).</p>
     <div class="fig-pair">
       <figure class="fig"><img src="img/ik-payables-before.png" alt="Payables Overview before: a custom banner, its own fonts and colours, built outside the system." loading="lazy"><figcaption>Before: the original Payables Overview, with its own banner, fonts and colours.</figcaption></figure>
       <figure class="fig"><img src="img/ik-payables-after.png" alt="Payables Overview after: the reference dashboard rebuilt on the shared components and tokens." loading="lazy"><figcaption>After: the reference dashboard rebuilt on shared components and tokens (in review).</figcaption></figure>
     </div>
+    <p class="mini-label">How changes ship</p>
+    <p>Every change follows ticket, branch, PR, CI, merge, with tickets synced to the team's tracker. Branches and PR titles follow a naming standard that CI enforces, and pre-commit checks run on every commit. I merge my own PRs in the theming app once CI is green, and the architect reviews the rest.</p>
+    <p class="mini-label">Working with engineers</p>
+    <ul>
+      <li><strong>Patches in dependency order.</strong> When I rebuilt the Payables dashboard, I split it into a library patch and a page patch and told the developer which to apply first.</li>
+      <li><strong>Checked on a live site.</strong> I tested in a preview, so I asked the page's developer to check it on a real site.</li>
+      <li><strong>Docs matched to code.</strong> I found that <code>COMPONENTS.md</code> listed options the code didn't have, and fixed the code to match.</li>
+      <li><strong>Scope check.</strong> Changes beyond colour, type and logo went to the PM before anyone opened a PR.</li>
+    </ul>
     <p class="mini-label">How reviews work</p>
     <div class="tbl-scroll"><table class="tbl">
       <tr><th>What I find</th><th>What happens</th></tr>
@@ -165,6 +178,7 @@
       <tr><td>Custom doctype with no tokens</td><td>Flagged before anyone fixes it</td></tr>
     </table></div>
     <p>I also wrote guidelines for headers, cards, search, dropdowns, date pickers and uploads.</p>
+    <p><strong>Not yet in place:</strong> a deprecation policy. Next I'd add a deprecated flag, one release of warnings, then removal.</p>
   </div>
 
   <div class="chapter">
@@ -177,7 +191,7 @@
     <p><strong>No handoff gap:</strong> I didn't pass specs to developers. I shipped the system.</p>
     <figure class="fig"><img src="img/ik-claude-terminal.jpg" alt="Auditing component SCSS in the terminal, next to Figma variables and Claude." loading="lazy"><figcaption>Auditing component SCSS in the terminal, next to Figma variables and Claude.</figcaption></figure>
     <div class="stats stats-sm">
-      <div class="stat"><strong>23</strong><span>Apps on one system, in light and dark</span></div>
+      <div class="stat"><strong>20+</strong><span>Apps on one system, in light and dark</span></div>
       <div class="stat"><strong>114</strong><span>Tokens in code, behind both libraries</span></div>
       <div class="stat"><strong>50+</strong><span>Files moved from hardcoded values to tokens</span></div>
       <div class="stat"><strong>Focus</strong><span>Visible in both light and dark mode</span></div>
