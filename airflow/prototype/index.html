@@ -94,9 +94,12 @@ main{max-width:1280px;margin:0 auto;padding:48px 32px 96px}
 .chip{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--border-brand);border-radius:8px;padding:6px 10px;font-size:12px;font-weight:500;color:var(--text-700)}
 .chip b{font-weight:600;color:var(--text-900)}
 .chip .ico{width:16px;height:16px;color:#2E90FA}
-.d-grid{display:grid;grid-template-columns:871fr 394fr;gap:12px;margin-top:44px;align-items:start}
-.d-left,.d-right{display:grid;gap:12px}
-.d-sub{display:grid;grid-template-columns:471fr 320fr;gap:12px;align-items:start}
+.d-grid{display:grid;grid-template-columns:871fr 394fr;gap:12px;margin-top:44px;align-items:stretch}
+.d-left,.d-right{display:grid;gap:12px;grid-template-rows:auto 1fr}
+.d-sub{display:grid;grid-template-columns:471fr 320fr;gap:12px;align-items:stretch}
+.today{display:flex;flex-direction:column}.today .tbl{flex:1}
+.pred{display:flex;flex-direction:column}.pred .chart{margin-top:auto}
+.pol{display:flex;flex-direction:column;justify-content:space-between}
 
 .now{padding:20px 20px 24px}
 .now-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
@@ -137,7 +140,7 @@ main{max-width:1280px;margin:0 auto;padding:48px 32px 96px}
 .hbar .t span{display:block;height:100%;border-radius:999px;transition:width .4s ease}
 .hbar .v{width:28px;text-align:end;color:var(--text-700);font-weight:500}
 
-.pols{display:grid;gap:12px}
+.pols{display:grid;gap:12px;grid-template-rows:repeat(5,1fr)}
 .pol{padding:16px 14px}
 .pol-n{font-weight:600;font-size:16px;line-height:24px}
 .pol-n span{color:var(--text-600);font-weight:500}
